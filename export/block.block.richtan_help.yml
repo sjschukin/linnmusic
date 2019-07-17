@@ -1,0 +1,22 @@
+uuid: b52c0fca-5083-400f-9df8-de00411e9c5e
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - richtan
+_core:
+  default_config_hash: IBSl1M-4OLxaeAs8L9J3SzGrGHQu30weCxasnVk5goI
+id: richtan_help
+theme: richtan
+region: highlighted
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

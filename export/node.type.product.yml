@@ -1,0 +1,17 @@
+uuid: 9eda28c8-f946-44ea-a550-1f80251fb903
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Product
+type: product
+description: 'Use <em>products</em> to create a device, equiment or system.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

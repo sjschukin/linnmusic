@@ -1,0 +1,22 @@
+uuid: 4af71708-3b3e-48c2-baa2-46fc045a2326
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - richtan
+_core:
+  default_config_hash: ZxPn0__ZazslnNtdyr3YdamPMb4ulpHEHWCCAOh81dE
+id: richtan_messages
+theme: richtan
+region: highlighted
+weight: -50
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: 980dddfa-53ca-409a-9be0-e2734cbe6350
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - richtan
+_core:
+  default_config_hash: qbOVmG4zRUvGaBaddR-zxnqB5l32MvBZ-7u7L-pez9k
+id: richtan_account_menu
+theme: richtan
+region: auto_hidden_block
+weight: 11
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

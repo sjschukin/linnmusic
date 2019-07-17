@@ -1,0 +1,27 @@
+uuid: aacd668b-e661-4c78-99fa-655814ffc98c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - richtan
+_core:
+  default_config_hash: c9FV5CbNTuR4YxLz8YNIiItQRNVvwQ25hf-cKyQydBU
+id: richtan_main_menu
+theme: richtan
+region: primary_menu
+weight: 10
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

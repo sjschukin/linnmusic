@@ -1,0 +1,22 @@
+uuid: 9214d416-5e91-4c0e-aa95-65111748084d
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - richtan
+_core:
+  default_config_hash: manlARe3dofTrf395Tchp2eKXuAsJH_vtHjw9ZM_8RM
+id: richtan_breadcrumbs
+theme: richtan
+region: breadcrumb
+weight: -100
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

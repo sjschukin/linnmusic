@@ -1,0 +1,22 @@
+uuid: 794af112-2a48-413c-9503-cd52c8d4b7fe
+langcode: en
+status: true
+dependencies:
+  theme:
+    - richtan
+_core:
+  default_config_hash: KGL-YZGOOQ6ojDowooX7ELKEjtTp6-sxckEPfhvjoR0
+id: richtan_local_tasks
+theme: richtan
+region: auto_hidden_block
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

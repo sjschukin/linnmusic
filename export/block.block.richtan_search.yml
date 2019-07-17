@@ -1,0 +1,22 @@
+uuid: 503e8056-feb3-44ff-94a7-42517335b60b
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - richtan
+_core:
+  default_config_hash: QEwPPNhexnQeg46PKBh3ZuDuTwS2NJPnpP2H_0nsAw0
+id: richtan_search
+theme: richtan
+region: footer_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

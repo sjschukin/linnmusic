@@ -1,0 +1,22 @@
+uuid: d26e0fdd-5b07-43ab-a9fa-cf5de7dbc951
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - richtan
+_core:
+  default_config_hash: tMcZSxrg-ZIxF3QV2RNq6HQ5VSGvl_PTHPI3lsRVS_g
+id: richtan_powered
+theme: richtan
+region: auto_hidden_block
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

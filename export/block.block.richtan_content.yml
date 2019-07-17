@@ -1,0 +1,22 @@
+uuid: 3c070905-593f-4aa4-adc4-e4b6d9f386cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - richtan
+_core:
+  default_config_hash: RZJfNL1Jsk395U4fBIDVwk1LDZJRWBSuTKzwmEgLHvw
+id: richtan_content
+theme: richtan
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
