@@ -28,7 +28,7 @@ h4, .h4{ font-size: 1.2em; color: #000; }
 img{ max-width: 100%; height: auto; }
 
 a{
-  color: #078D92;
+  color: #078d92;
 }
 
 a:hover{
@@ -316,13 +316,13 @@ nav h2{
   background: none;
 }
 
-.menu-base-theme li a{
+.menu-base-theme li a {
   background: #fbfbfb;
-  color: #333;
+  color: #078d92;
 }
 
-.menu-base-theme li a:hover{
-  color: #333;
+.menu-base-theme li a:hover {
+  color: #1bd3df;
 }
 
 .main-menu {
