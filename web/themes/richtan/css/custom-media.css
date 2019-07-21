@@ -18,6 +18,7 @@
   .region-primary-menu,
   .menu-base-theme li a{
     background: none;
+    color: #fff;
   }
 
   .menu-base-theme a{
