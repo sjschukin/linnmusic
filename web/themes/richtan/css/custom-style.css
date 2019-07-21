@@ -281,7 +281,7 @@ input[type="submit"]{
   height: 42px;
 }
 
-.btn:hover, 
+.btn:hover,
 input[type="submit"]:hover{
   background: #13ADB3;
 }
@@ -317,7 +317,12 @@ nav h2{
 }
 
 .menu-base-theme li a{
-  background: #FBFBFB
+  background: #fbfbfb;
+  color: #333;
+}
+
+.menu-base-theme li a:hover{
+  color: #333;
 }
 
 .main-menu {
@@ -406,11 +411,11 @@ nav h2{
   border-top: 0;
 }
 
-.bd-example-type h1, 
-.bd-example-type h2, 
-.bd-example-type h3, 
-.bd-example-type h4, 
-.bd-example-type h5, 
+.bd-example-type h1,
+.bd-example-type h2,
+.bd-example-type h3,
+.bd-example-type h4,
+.bd-example-type h5,
 .bd-example-type h6 {
   margin: 0;
 }
@@ -421,8 +426,6 @@ nav h2{
 }
 
 /*Contact form*/
-
-.path-contact{}
 
 .contact-message-feedback-form{
   max-width: 650px;
