@@ -13,7 +13,7 @@
    width="45"
    height="45"
    id="svg2"
-   sodipodi:docname="logo.svg"
+   sodipodi:docname="linn-logo-short.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <metadata
      id="metadata15">
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -42,8 +42,8 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="7.8946037"
-     inkscape:cx="5.6331456"
-     inkscape:cy="10.273225"
+     inkscape:cx="-16.153888"
+     inkscape:cy="10.083222"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -65,7 +65,7 @@
        r="22.5" />
   </g>
   <g
-     transform="matrix(0.04522753,0,0,0.04523197,-34.377781,57.655565)"
+     transform="matrix(0.04522753,0,0,0.04523197,-34.631119,57.655565)"
      id="layer2">
     <g
        transform="matrix(10.846167,0,0,10.846167,-7699.5731,388.46733)"
@@ -73,12 +73,12 @@
       <path
          d="m 786.60053,-107.41188 c 0,-22.03 17.85875,-39.8875 39.88875,-39.8875 22.02875,0 39.8875,17.8575 39.8875,39.8875 0,22.03 -17.85875,39.8875 -39.8875,39.8875 -22.03,0 -39.88875,-17.8575 -39.88875,-39.8875 z"
          id="path89349"
-         style="display:inline;fill:none;stroke:#2ca089;stroke-width:6.11534244;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.86400008;stroke-dasharray:none;stroke-opacity:1"
+         style="display:inline;fill:none;stroke:#2ca089;stroke-width:6.11534262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.86400008;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          d="m 787.23552,-104.72189 h 78.70625"
          id="path89353"
-         style="fill:none;stroke:#2ca089;stroke-width:6.11534244;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.86400008;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#2ca089;stroke-width:6.11534262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.86400008;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          d="m 826.48929,-108.01712 -23.17475,-25.47489 h 46.3495 z"
