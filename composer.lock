@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b3532b208a73a257e2f2628477ca6ee",
+    "content-hash": "2af686909ee50a5fc515e6cf108df89b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4155,17 +4155,6 @@
             ],
             "description": "A polyfill for getallheaders.",
             "time": "2019-03-08T08:55:37+00:00"
-        },
-        {
-            "name": "sjschukin/richtan",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sjschukin/richtan.git",
-                "reference": "master"
-            },
-            "type": "drupal-theme",
-            "time": "2019-07-14T20:42:26+00:00"
         },
         {
             "name": "stack/builder",
@@ -8701,9 +8690,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "sjschukin/richtan": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

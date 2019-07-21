@@ -13,19 +13,6 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "sjschukin/richtan",
-                "version": "dev-master",
-                "type":"drupal-theme",
-                "source": {
-                    "url": "https://github.com/sjschukin/richtan.git",
-                    "type": "git",
-                    "reference": "master"
-                }
-            }
         }
     ],
     "require": {
@@ -37,7 +24,6 @@
         "drupal/core": "^8.7.0",
         "drupal/pathauto": "^1.4",
         "drush/drush": "^9.0.0",
-        "sjschukin/richtan": "dev-master",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
