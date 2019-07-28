@@ -41,6 +41,7 @@ permissions:
   - 'edit own product content'
   - 'edit terms in music_systems'
   - 'edit terms in tags'
+  - 'never autoplay videos'
   - 'revert all revisions'
   - 'revert article revisions'
   - 'revert event revisions'

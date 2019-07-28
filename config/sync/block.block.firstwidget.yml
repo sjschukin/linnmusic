@@ -1,0 +1,31 @@
+uuid: 8484f030-8d5e-4b2b-a59c-49ff6979a0f7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e73cdec3-8e6b-4817-a91c-1ad40ab01452'
+  module:
+    - block_content
+    - system
+  theme:
+    - richtan
+id: firstwidget
+theme: richtan
+region: topwidget_first
+weight: 0
+provider: null
+plugin: 'block_content:e73cdec3-8e6b-4817-a91c-1ad40ab01452'
+settings:
+  id: 'block_content:e73cdec3-8e6b-4817-a91c-1ad40ab01452'
+  label: 'Top widget first'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

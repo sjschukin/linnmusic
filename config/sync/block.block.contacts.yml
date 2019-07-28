@@ -1,0 +1,25 @@
+uuid: fdde64b5-1970-43e5-85ee-0f3048b1199b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3bfca6a2-e4a6-400a-af68-a9e098d2ec27'
+  module:
+    - block_content
+  theme:
+    - richtan
+id: contacts
+theme: richtan
+region: footer_third
+weight: 0
+provider: null
+plugin: 'block_content:3bfca6a2-e4a6-400a-af68-a9e098d2ec27'
+settings:
+  id: 'block_content:3bfca6a2-e4a6-400a-af68-a9e098d2ec27'
+  label: Контакты
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
