@@ -68,8 +68,6 @@
   color: #a51b00;
 }
 
-
-
 /*FORM*/
 
 /**
@@ -224,7 +222,7 @@ ul.tabs {
 
 details {
   margin-bottom: 15px;
-  border: 1px solid #DEDEDE;
+  border: 1px solid #dedede;
 }
 
 details[open], details[open] details {
@@ -233,7 +231,7 @@ details[open], details[open] details {
 
 details summary {
   padding: 15px;
-  background: #FBFBFB;
+  background: #fbfbfb;
 }
 
 details summary:before {
@@ -256,7 +254,7 @@ details[open] summary {
 }
 
 details[open] > summary {
-  border-bottom: solid 1px #DEDEDE;
+  border-bottom: solid 1px #dedede;
 }
 
 details[open] details summary {

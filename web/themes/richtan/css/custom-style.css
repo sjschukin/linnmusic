@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i');
 
+/* logo color: #003380
+
 /*Header*/
 
 body{
@@ -28,11 +30,11 @@ h4, .h4{ font-size: 1.2em; color: #000; }
 img{ max-width: 100%; height: auto; }
 
 a{
-  color: #078d92;
+  color: #2a7fff;
 }
 
 a:hover{
-  color: #1bd3df;
+  color: #5599ff;
 }
 
 ul.links.inline{
@@ -48,7 +50,7 @@ ul.links.inline li{
 }
 
 .main-header{
-  background: url(../images/welcome_banner_bg.jpg);  
+  background: url(../images/welcome_banner_bg.jpg);
   color: #fff;
   padding: 10px 0;
   margin-bottom: 20px;
@@ -273,7 +275,7 @@ input, button, select, textarea{
 
 .btn, 
 input[type="submit"]{
-  background: #19c2c8;
+  background: #5599ff;
   color: #fff;
   border: 0;
   padding: 13px;
@@ -283,7 +285,7 @@ input[type="submit"]{
 
 .btn:hover,
 input[type="submit"]:hover{
-  background: #13ADB3;
+  background: #2a7fff;
 }
 
 /*FRONT PAGE*/
@@ -318,11 +320,11 @@ nav h2{
 
 .menu-base-theme li a {
   background: #fbfbfb;
-  color: #078d92;
+  color: #2a7fff;
 }
 
 .menu-base-theme li a:hover {
-  color: #1bd3df;
+  color: #5599ff;
 }
 
 .main-menu {
