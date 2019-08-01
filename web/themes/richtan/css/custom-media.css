@@ -31,9 +31,10 @@
 
   .menu-base-theme a {
     border: 0;
+    padding: 13px 15px !important;
   }
 
-  .menu-base-theme > li{
+  .menu-base-theme > li {
     border: 0;
   }
 
