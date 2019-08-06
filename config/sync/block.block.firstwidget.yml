@@ -11,13 +11,13 @@ dependencies:
     - richtan
 id: firstwidget
 theme: richtan
-region: topwidget_first
-weight: 0
+region: topwidget_second
+weight: -8
 provider: null
 plugin: 'block_content:e73cdec3-8e6b-4817-a91c-1ad40ab01452'
 settings:
   id: 'block_content:e73cdec3-8e6b-4817-a91c-1ad40ab01452'
-  label: 'Top widget first'
+  label: 'Listening widget'
   provider: block_content
   label_display: '0'
   status: true

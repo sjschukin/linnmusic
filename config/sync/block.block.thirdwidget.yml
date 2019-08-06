@@ -17,7 +17,7 @@ provider: null
 plugin: 'block_content:679c1451-844e-4358-8014-b1bf0c92656c'
 settings:
   id: 'block_content:679c1451-844e-4358-8014-b1bf0c92656c'
-  label: 'Top widget third'
+  label: 'Service widget'
   provider: block_content
   label_display: '0'
   status: true

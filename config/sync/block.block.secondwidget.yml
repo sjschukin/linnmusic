@@ -11,13 +11,13 @@ dependencies:
     - richtan
 id: secondwidget
 theme: richtan
-region: topwidget_second
-weight: 0
+region: topwidget_first
+weight: -8
 provider: null
 plugin: 'block_content:bdc189b7-588d-49bb-857d-5ed3e9dc27a7'
 settings:
   id: 'block_content:bdc189b7-588d-49bb-857d-5ed3e9dc27a7'
-  label: 'Top widget second'
+  label: 'Catalog widget'
   provider: block_content
   label_display: '0'
   status: true
