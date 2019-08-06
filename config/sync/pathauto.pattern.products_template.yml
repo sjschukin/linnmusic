@@ -9,14 +9,14 @@ label: 'Products template'
 type: 'canonical_entities:node'
 pattern: 'products/[node:field_series:entity:name]/[node:title]'
 selection_criteria:
-  51c11d6b-7afc-4748-b600-428f8a2955f8:
+  ba48185f-df69-4a48-ac4a-da670e35aceb:
     id: node_type
     bundles:
       product: product
     negate: false
     context_mapping:
       node: node
-    uuid: 51c11d6b-7afc-4748-b600-428f8a2955f8
+    uuid: ba48185f-df69-4a48-ac4a-da670e35aceb
 selection_logic: and
 weight: -5
 relationships: {  }

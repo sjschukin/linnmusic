@@ -1,0 +1,11 @@
+uuid: 23df80bb-9ff4-45d0-9961-80dc62ec7010
+langcode: ru
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+id: block_content.basic
+target_entity_type_id: block_content
+target_bundle: basic
+default_langcode: site_default
+language_alterable: false

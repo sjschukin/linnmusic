@@ -10,14 +10,14 @@ label: 'Music systems template'
 type: 'canonical_entities:taxonomy_term'
 pattern: 'products/[term:name]'
 selection_criteria:
-  b194b92b-4c1a-4466-a706-323bea7e8343:
+  368d460e-34f1-4c10-b4a4-4d4ffe9f6ebc:
     id: 'entity_bundle:taxonomy_term'
     bundles:
       music_systems: music_systems
     negate: false
     context_mapping:
       taxonomy_term: taxonomy_term
-    uuid: b194b92b-4c1a-4466-a706-323bea7e8343
+    uuid: 368d460e-34f1-4c10-b4a4-4d4ffe9f6ebc
 selection_logic: and
 weight: -5
 relationships: {  }

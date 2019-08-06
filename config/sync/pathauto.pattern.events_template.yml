@@ -1,5 +1,5 @@
-uuid: 7226c116-f25f-4337-aab8-22310341cfd2
-langcode: en
+uuid: 29794fe6-d23c-4914-9a38-8214e272990d
+langcode: ru
 status: true
 dependencies:
   module:
@@ -9,14 +9,14 @@ label: 'Events template'
 type: 'canonical_entities:node'
 pattern: '[node:title]/[node:created:html_date]'
 selection_criteria:
-  7a115582-e781-4f81-aafa-2498d6ff07b2:
+  a98a0492-ac27-4902-a5b2-854e92a70a39:
     id: node_type
     bundles:
       event: event
     negate: false
     context_mapping:
       node: node
-    uuid: 7a115582-e781-4f81-aafa-2498d6ff07b2
+    uuid: a98a0492-ac27-4902-a5b2-854e92a70a39
 selection_logic: and
 weight: -5
 relationships: {  }

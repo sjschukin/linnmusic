@@ -8,9 +8,9 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Event
+name: Мероприятие
 type: event
-description: 'Use <em>events</em> for time-sensitive content like news or press releases.'
+description: 'Используйте <em>мероприятия</em> для отображения чувствительного ко времени содержимого, такого как новости или пресс-релизы.'
 help: ''
 new_revision: false
 preview_mode: 1

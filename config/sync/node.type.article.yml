@@ -10,9 +10,9 @@ third_party_settings:
     parent: ''
 _core:
   default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
-name: Article
+name: Статья
 type: article
-description: 'Use <em>articles</em> for time-sensitive like blog content.'
+description: 'Используйте <em>Ссатьи</em> для отображения чувствительного ко времени содержимого, как в блогах.'
 help: ''
 new_revision: false
 preview_mode: 1
