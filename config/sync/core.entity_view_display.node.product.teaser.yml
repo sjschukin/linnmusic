@@ -5,26 +5,33 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.product.body
+    - field.field.node.product.field_image
+    - field.field.node.product.field_series
+    - image.style.thumbnail
     - node.type.product
   module:
-    - text
+    - image
     - user
 id: node.product.teaser
 targetEntityType: node
 bundle: product
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 1
     region: content
+    label: inline
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  body: true
+  field_series: true
+  langcode: true

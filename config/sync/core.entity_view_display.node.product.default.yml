@@ -19,13 +19,13 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
   field_image:
-    weight: 103
-    label: above
+    weight: 3
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -33,16 +33,17 @@ content:
     type: image
     region: content
   field_series:
-    weight: 102
-    label: above
+    weight: 1
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  langcode: true

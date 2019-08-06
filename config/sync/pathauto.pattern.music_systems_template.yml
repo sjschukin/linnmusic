@@ -1,0 +1,23 @@
+uuid: 59f7f615-c2ac-4186-8e3a-03ee532be4d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: music_systems_template
+label: 'Music systems template'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'products/[term:name]'
+selection_criteria:
+  b194b92b-4c1a-4466-a706-323bea7e8343:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      music_systems: music_systems
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: b194b92b-4c1a-4466-a706-323bea7e8343
+selection_logic: and
+weight: -5
+relationships: {  }
