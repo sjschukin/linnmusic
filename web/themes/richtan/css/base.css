@@ -177,9 +177,6 @@ abbr.ajax-changed {
 .node__content > .field {
   margin-bottom: 15px;
 }
-.field__label {
-  font-weight: 600; 
-}
 .field--label-inline .field__label,
 .field--label-inline .field__items,
 .field--label-inline .field__item {

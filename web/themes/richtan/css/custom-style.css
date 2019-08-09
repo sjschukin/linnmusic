@@ -4,7 +4,7 @@
 
 /*Header*/
 
-body{
+body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 170%;
@@ -12,24 +12,36 @@ body{
   overflow-x: hidden;
 }
 
-p{ margin: 0 0 10px 0; }
+p {
+  margin: 0 0 10px 0;
+}
 
 .h1, .h2, .h3, h1, h2, h3 {
   font-weight: 500;
   margin: 10px 0;
 }
 
-h1, .h1{ font-size: 1.8em; color: #000; }
+h1, .h1 {
+  font-size: 1.8em; color: #000;
+}
 
-h2, .h2{ font-size: 1.6em; color: #000; }
+h2, .h2 {
+  font-size: 1.6em; color: #000; 
+}
 
-h3, .h3{ font-size: 1.4em; color: #000; }
+h3, .h3 {
+  font-size: 1.4em; color: #000; 
+}
 
-h4, .h4{ font-size: 1.2em; color: #000; }
+h4, .h4 {
+  font-size: 1.2em; color: #000; 
+}
 
-img{ max-width: 100%; height: auto; }
+img {
+  max-width: 100%; height: auto; 
+}
 
-a{
+a {
   color: #2a7fff;
 }
 
@@ -608,4 +620,44 @@ ul.links.inline li{
 
 .flex-control-paging li a.flex-active{
   background: #fff;
+}
+
+/* Content */
+.container h1, .container .h1 {
+  color: #2e2e2e;
+}
+
+/* Product */
+
+.field--name-field-price {
+  font-size: 1.6em;
+  color: #000;
+  text-align: center;
+}
+
+.field--type-image .field__items .field__item {
+  float: left;
+  padding: 5px 5px 20px 0;
+}
+
+/* Products */
+
+.path-products .container .views-row {
+  padding: 5px 0;
+}
+
+.path-products .container h4 {
+  display: block;
+  background-color: #efefef;
+  padding: 5px;
+}
+
+.path-products .container h5 {
+  display: block;
+  font-style: italic;
+}
+
+.path-products .field-price {
+  font-size: 1.2em;
+  color: #2e2e2e;
 }
