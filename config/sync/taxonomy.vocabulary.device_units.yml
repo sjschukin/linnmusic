@@ -1,0 +1,8 @@
+uuid: 31f75d8f-a449-4128-9e88-7c7355b68d3f
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Состав каталога'
+vid: device_units
+description: ''
+weight: 0

@@ -1,5 +1,5 @@
 uuid: d8993407-b413-4baf-bd85-24774153a762
-langcode: en
+langcode: ru
 status: true
 dependencies:
   module:
@@ -30,7 +30,7 @@ tips:
   locale-search:
     id: locale-search
     plugin: text
-    label: Search
+    label: Поиск
     body: 'Enter the specific word or sentence you want to translate, you can also write just a part of a word.'
     weight: 3
     attributes:

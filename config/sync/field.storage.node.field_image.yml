@@ -1,5 +1,5 @@
 uuid: 3a5c2587-c20c-4649-942b-45af0ed00b91
-langcode: en
+langcode: ru
 status: true
 dependencies:
   module:
@@ -15,7 +15,7 @@ type: image
 settings:
   uri_scheme: public
   default_image:
-    uuid: null
+    uuid: ''
     alt: ''
     title: ''
     width: null
@@ -25,7 +25,7 @@ settings:
   display_default: false
 module: image
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes:
   target_id:

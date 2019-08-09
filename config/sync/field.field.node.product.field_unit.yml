@@ -1,0 +1,33 @@
+uuid: 629e25e6-d10d-4a67-924e-237db1e731b3
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_unit
+    - node.type.product
+    - taxonomy.vocabulary.device_units
+  content:
+    - 'taxonomy_term:device_units:169077ab-d20e-4478-a0ca-982f311ada43'
+id: node.product.field_unit
+field_name: field_unit
+entity_type: node
+bundle: product
+label: 'Состав каталога'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 169077ab-d20e-4478-a0ca-982f311ada43
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      device_units: device_units
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

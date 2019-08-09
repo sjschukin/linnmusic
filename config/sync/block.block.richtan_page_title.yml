@@ -1,6 +1,6 @@
 uuid: e621682c-15b8-4c87-8d0d-7afb4cae21ab
-langcode: en
-status: false
+langcode: ru
+status: true
 dependencies:
   theme:
     - richtan
@@ -8,13 +8,13 @@ _core:
   default_config_hash: QoSl3DWuNgc1hvJUxtlLmCHfLKELZUcpjXHH6Iz7pd0
 id: richtan_page_title
 theme: richtan
-region: page_title
+region: breadcrumb
 weight: 0
 provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
-  label: 'Page title'
+  label: 'Заголовок страницы'
   provider: core
   label_display: '0'
 visibility: {  }

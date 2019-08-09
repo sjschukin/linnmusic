@@ -5,33 +5,40 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.product.body
+    - field.field.node.product.field_device_type
     - field.field.node.product.field_image
+    - field.field.node.product.field_price
     - field.field.node.product.field_series
-    - image.style.thumbnail
+    - field.field.node.product.field_unit
     - node.type.product
   module:
-    - image
+    - text
     - user
 id: node.product.teaser
 targetEntityType: node
 bundle: product
 mode: teaser
 content:
-  field_image:
-    type: image
+  body:
+    type: text_default
     weight: 1
     region: content
-    label: inline
-    settings:
-      image_style: thumbnail
-      image_link: content
-    third_party_settings: {  }
-  links:
-    weight: 0
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+  field_price:
+    type: number_integer
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      thousand_separator: ' '
+      prefix_suffix: true
+    third_party_settings: {  }
 hidden:
-  body: true
+  field_device_type: true
+  field_image: true
   field_series: true
+  field_unit: true
   langcode: true
+  links: true

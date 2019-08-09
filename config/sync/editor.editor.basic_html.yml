@@ -1,5 +1,5 @@
 uuid: a04efd96-eb4d-4411-9129-dda2710d7da2
-langcode: en
+langcode: ru
 status: true
 dependencies:
   config:
@@ -15,36 +15,43 @@ settings:
     rows:
       -
         -
-          name: Formatting
+          name: Формат
           items:
             - Bold
             - Italic
             - Underline
             - Strike
+            - Superscript
+            - Subscript
+            - RemoveFormat
         -
-          name: Linking
+          name: Ссылки
           items:
             - DrupalLink
             - DrupalUnlink
         -
-          name: Lists
+          name: Списки
           items:
             - BulletedList
             - NumberedList
         -
-          name: Media
+          name: Медиа
           items:
+            - HorizontalRule
             - Table
+            - SpecialChar
             - Blockquote
             - DrupalImage
             - video_embed
         -
-          name: 'Block Formatting'
+          name: Стили
           items:
             - Format
         -
-          name: Tools
+          name: Инструменты
           items:
+            - Undo
+            - Redo
             - Source
   plugins:
     language:

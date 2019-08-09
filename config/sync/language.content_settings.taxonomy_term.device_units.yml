@@ -1,0 +1,11 @@
+uuid: 7bbaf3de-a73f-4537-80aa-ddd7353a0fb0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.device_units
+id: taxonomy_term.device_units
+target_entity_type_id: taxonomy_term
+target_bundle: device_units
+default_langcode: site_default
+language_alterable: false

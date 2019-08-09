@@ -10,9 +10,9 @@ id: node.product.field_series
 field_name: field_series
 entity_type: node
 bundle: product
-label: Series
+label: Серия
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

@@ -1,21 +1,26 @@
-uuid: a678b80d-67f8-42c9-a264-2c532237dd91
-langcode: en
+uuid: 9dcb26c6-d8e8-4ac6-971f-da892c64be33
+langcode: ru
 status: true
 dependencies:
   config:
+    - field.storage.node.body
+    - field.storage.node.field_device_type
+    - field.storage.node.field_price
     - field.storage.node.field_series
-    - node.type.product
     - system.menu.main
+    - taxonomy.vocabulary.device_units
   module:
     - node
+    - taxonomy
+    - text
     - user
 id: products
 label: Products
 module: views
 description: ''
 tag: ''
-base_table: node_field_data
-base_field: nid
+base_table: taxonomy_term_field_data
+base_field: tid
 core: 8.x
 display:
   default:
@@ -42,36 +47,241 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Применить
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Сбросить
+          exposed_sorts_label: 'Сортировать по'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: 'По возрастанию'
+          sort_desc_label: 'По убыванию'
       pager:
         type: none
         options:
-          items_per_page: null
+          items_per_page: 0
           offset: 0
       style:
         type: default
         options:
           grouping:
             -
+              field: name
+              rendered: false
+              rendered_strip: false
+            -
               field: field_series
-              rendered: true
+              rendered: false
+              rendered_strip: false
+            -
+              field: field_device_type
+              rendered: false
               rendered_strip: false
           row_class: ''
           default_row_class: true
       row:
         type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: true
       fields:
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: "<div class=\"panel panel-default\">\r\n  <div class=\"panel-body\">\r\n    <h3>{{ name }}</h3>\r\n  </div>\r\n</div>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          convert_spaces: false
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
         field_series:
           id: field_series
           table: node__field_series
           field: field_series
-          relationship: none
+          relationship: reverse__node__field_unit
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: '<h4>{{ field_series }}</h4>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: true
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_device_type:
+          id: field_device_type
+          table: node__field_device_type
+          field: field_device_type
+          relationship: reverse__node__field_unit
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: '<h5>{{ field_device_type }}</h5>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: true
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: reverse__node__field_unit
           group_type: group
           admin_label: ''
           label: ''
@@ -115,58 +325,10 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: true
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          entity_type: node
-          entity_field: title
-          label: ''
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            trim: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            html: false
-          hide_empty: false
-          empty_zero: false
-          settings:
-            link_to_entity: true
-          plugin_id: field
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exclude: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_alter_empty: true
           click_sort_column: value
           type: string
+          settings:
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -177,32 +339,161 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: reverse__node__field_unit
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_price:
+          id: field_price
+          table: node__field_price
+          field: field_price
+          relationship: reverse__node__field_unit
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<div class=\"col-lg-9 col-md-9 col-sm-8 col-xs-7\">{{ title }}<br />{{ body }}</div>\r\n<div class=\"col-lg-3 col-md-3 col-sm-4 col-xs-5 field-price\">{{ field_price }}</div>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ' '
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
       filters:
         status:
           value: '1'
-          table: node_field_data
+          table: taxonomy_term_field_data
           field: status
           plugin_id: boolean
-          entity_type: node
+          entity_type: taxonomy_term
           entity_field: status
           id: status
           expose:
             operator: ''
           group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
+        vid:
+          id: vid
+          table: taxonomy_term_field_data
+          field: vid
           value:
-            product: product
-          entity_type: node
-          entity_field: type
+            device_units: device_units
+          entity_type: taxonomy_term
+          entity_field: vid
           plugin_id: bundle
       sorts:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        weight:
+          id: weight
+          table: taxonomy_term_field_data
+          field: weight
           relationship: none
           group_type: group
           admin_label: ''
@@ -210,14 +501,36 @@ display:
           exposed: false
           expose:
             label: ''
-          entity_type: node
-          entity_field: title
+          entity_type: taxonomy_term
+          entity_field: weight
+          plugin_id: standard
+        field_price_value:
+          id: field_price_value
+          table: node__field_price
+          field: field_price_value
+          relationship: reverse__node__field_unit
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
           plugin_id: standard
       title: Каталог
       header: {  }
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        reverse__node__field_unit:
+          id: reverse__node__field_unit
+          table: taxonomy_term_field_data
+          field: reverse__node__field_unit
+          relationship: none
+          group_type: group
+          admin_label: field_unit
+          required: true
+          entity_type: taxonomy_term
+          plugin_id: entity_reverse
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
@@ -225,9 +538,11 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_device_type'
+        - 'config:field.storage.node.field_price'
         - 'config:field.storage.node.field_series'
   page_1:
     display_plugin: page
@@ -251,7 +566,9 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_device_type'
+        - 'config:field.storage.node.field_price'
         - 'config:field.storage.node.field_series'
