@@ -633,17 +633,25 @@ ul.links.inline li{
   padding: 5px;
 }
 
+.content_layout .field--type-image .field__items::after,
+.content_layout .field--type-image.field__items::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.content_layout .field--type-image .field__items .field__item,
+.content_layout .field--type-image.field__items .field__item {
+  float: left;
+  padding: 5px 5px 10px 0;
+}
+
 /* product */
 
-.field--name-field-price {
+.content_layout .field--name-field-price {
   font-size: 1.6em;
   color: #000;
   text-align: center;
-}
-
-.field--type-image .field__items .field__item {
-  float: left;
-  padding: 5px 5px 10px 0;
 }
 
 /* products */
