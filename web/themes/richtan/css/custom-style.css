@@ -671,6 +671,10 @@ ul.links.inline li{
   font-style: italic;
 }
 
+.path-products .content_layout h6 {
+  font-size: 1.2em;
+}
+
 .path-products .field-price {
   font-size: 1.2em;
   color: #2e2e2e;
