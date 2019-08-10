@@ -125,21 +125,21 @@
       
       <div class="row">
         <!-- Top widget first region -->
-        <div class = {{ topwidget_class }}>
+        <div class={{ topwidget_class }}>
           {% if page.topwidget_first %}
             {{ page.topwidget_first }}
           {% endif %}
         </div>
         <!-- End top widget third region -->
         <!-- Top widget second region -->
-        <div class = {{ topwidget_class }}>
+        <div class={{ topwidget_class }}>
           {% if page.topwidget_second %}
             {{ page.topwidget_second }}
           {% endif %}
         </div>
         <!-- End top widget third region -->
         <!-- Top widget third region -->
-        <div class = {{ topwidget_third_class }}>
+        <div class={{ topwidget_third_class }}>
           {% if page.topwidget_third %}
             {{ page.topwidget_third }}
           {% endif %}
@@ -188,7 +188,7 @@
       <!--- Start Left SideBar -->
       {% if page.sidebar_first %}
         <div class="sidebar" >
-          <div class = {{sidebarfirst}} >
+          <div class={{sidebarfirst}}>
             {{ page.sidebar_first }}
           </div>
         </div>
@@ -238,21 +238,21 @@
       
       <div class="row">
         <!-- Top widget first region -->
-        <div class = {{ middle_class }}>
+        <div class={{ middle_class }}>
           {% if page.middle_first %}
             {{ page.middle_first }}
           {% endif %}
         </div>
         <!-- End top widget third region -->
         <!-- Top widget second region -->
-        <div class = {{ middle_class }}>
+        <div class={{ middle_class }}>
           {% if page.middle_second %}
             {{ page.middle_second }}
           {% endif %}
         </div>
         <!-- End top widget third region -->
         <!-- Top widget third region -->
-        <div class = {{ middle_third_class }}>
+        <div class={{ middle_third_class }}>
           {% if page.middle_third %}
             {{ page.middle_third }}
           {% endif %}
@@ -274,7 +274,7 @@
       <div class="row">
 
         <!-- Start Bottom First Region -->
-        <div class = {{ bottom_class }}>
+        <div class={{ bottom_class }}>
           {% if page.bottom_first %}
             {{ page.bottom_first }}
           {% endif %}
@@ -282,7 +282,7 @@
         <!-- End Bottom First Region -->
 
         <!-- Start Bottom Second Region -->
-        <div class = {{ bottom_class }}>
+        <div class={{ bottom_class }}>
           {% if page.bottom_second %}
             {{ page.bottom_second }}
           {% endif %}
@@ -290,14 +290,14 @@
         <!-- End Bottom Second Region -->
 
         <!-- Start Bottom third Region -->
-        <div class = {{ bottom_class }}>
+        <div class={{ bottom_class }}>
           {% if page.bottom_third %}
             {{ page.bottom_third }}
           {% endif %}
         </div>
         <!-- End Bottom Third Region -->
 
-        <div class = {{ bottom_class }}>
+        <div class={{ bottom_class }}>
           {% if page.bottom_forth %}
             {{ page.bottom_forth }}
           {% endif %}
@@ -318,7 +318,7 @@
       <div class="row">
         
         <!-- Start Footer First Region -->
-        <div class = {{ footer_class }}>
+        <div class={{ footer_class }}>
           {% if page.footer_first %}
             {{ page.footer_first }}
           {% endif %}
@@ -326,7 +326,7 @@
         <!-- End Footer First Region -->
 
         <!-- Start Footer Second Region -->
-        <div class = {{ footer_class }}>
+        <div class={{ footer_class }}>
           {% if page.footer_second %}
             {{ page.footer_second }}
           {% endif %}
@@ -334,7 +334,7 @@
         <!-- End Footer Second Region -->
 
         <!-- Start Footer third Region -->
-        <div class = {{ footer_third_class }}>
+        <div class={{ footer_third_class }}>
           {% if page.footer_third %}
             {{ page.footer_third }}
           {% endif %}
@@ -359,10 +359,10 @@
         <div class="col-sm-6 col-md-6">
           <div class="social-media">
             {% if facebook_url %}
-              <a href="{{ facebook_url }}"  class="facebook" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+              <a href="{{ facebook_url }}" class="facebook" target="_blank" ><i class="fab fa-facebook-f"></i></a>
             {% endif %}
             {% if google_plus_url %}
-              <a href="{{ google_plus_url }}"  class="google-plus" target="_blank" ><i class="fab fa-google-plus-g"></i></a>
+              <a href="{{ google_plus_url }}" class="google-plus" target="_blank" ><i class="fab fa-google-plus-g"></i></a>
             {% endif %}
             {% if twitter_url %}
               <a href="{{ twitter_url }}" class="twitter" target="_blank" ><i class="fab fa-twitter"></i></a>
@@ -393,8 +393,8 @@
 
       <!-- Copyright -->
       <div class="col-sm-6 col-md-6">
-        {% if copyright_text %}        
-          <p>{{copyright_text}}</p>        
+        {% if copyright_text %}
+          <p>{{ copyright_text }}</p>
         {% endif %}
       </div>
       <!-- End Copyright -->
@@ -402,7 +402,7 @@
       <!-- Credit link -->
       {% if show_credit_link %}
         <div class="col-sm-6 col-md-6">
-          <p class="credit-link">Designed by <a href="http://www.zymphonies.com" target="_blank">Zymphonies</a></p>
+          <p class="credit-link">Designed by <a href="mailto:s.j.schukin@yandex.ru" target="_blank">sjs</a></p>
         </div>
       {% endif %}
       <!-- End Credit link -->

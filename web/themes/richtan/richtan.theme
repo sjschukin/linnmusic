@@ -304,7 +304,6 @@ function richtan_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
     '#type' => 'checkbox',
     '#title' => t("Show/Hide credit text"),
     '#default_value' => theme_get_setting('show_credit_link'),
-    '#description'   => t("Zymphonies recommend you to display credit in footer"),
+    '#description'   => t("We recommend you to display credit in footer"),
   );
-
 }
