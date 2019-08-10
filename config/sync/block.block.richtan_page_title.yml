@@ -2,6 +2,8 @@ uuid: e621682c-15b8-4c87-8d0d-7afb4cae21ab
 langcode: ru
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - richtan
 _core:
@@ -17,4 +19,9 @@ settings:
   label: 'Заголовок страницы'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }
