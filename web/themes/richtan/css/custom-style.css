@@ -300,13 +300,9 @@ input[type="submit"]:hover{
   background: #2a7fff;
 }
 
-/*FRONT PAGE*/
+/* front page */
 
-.path-frontpage .content_layout {
-  text-align: center;
-}
-
-.path-frontpage .feed-icon{
+.path-frontpage .feed-icon {
   display: none;
 }
 
@@ -562,14 +558,14 @@ nav h2{
   margin-bottom: 10px;
 }
 
-/*links inline*/
+/* links inline */
 
 ul.links.inline li{
   display: inline-block;
   padding-right: 10px;
 }
 
-/*profile*/
+/* profile */
 
 .profile > div{
   padding-right: 5px;
@@ -622,12 +618,12 @@ ul.links.inline li{
   background: #fff;
 }
 
-/* Content */
+/* content */
 .container h1, .container .h1 {
   color: #2e2e2e;
 }
 
-/* Product */
+/* product */
 
 .field--name-field-price {
   font-size: 1.6em;
@@ -640,7 +636,7 @@ ul.links.inline li{
   padding: 5px 5px 20px 0;
 }
 
-/* Products */
+/* products */
 
 .path-products .container .views-row {
   padding: 5px 0;
