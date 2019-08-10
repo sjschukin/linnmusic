@@ -5,11 +5,14 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_device_type
+    - field.storage.node.field_image
     - field.storage.node.field_price
     - field.storage.node.field_series
+    - image.style.medium
     - system.menu.main
     - taxonomy.vocabulary.device_units
   module:
+    - image
     - node
     - taxonomy
     - text
@@ -277,6 +280,70 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_image:
+          id: field_image
+          table: node__field_image
+          field: field_image
+          relationship: reverse__node__field_unit
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_style: medium
+            image_link: content
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 1
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -415,7 +482,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"col-lg-9 col-md-9 col-sm-8 col-xs-7\">{{ title }}<br />{{ body }}</div>\r\n<div class=\"col-lg-3 col-md-3 col-sm-4 col-xs-5 field-price\">{{ field_price }}</div>"
+            text: "<div class=\"col-lg-6 col-md-6 col-sm-4 col-xs-7\"><h6>{{ title }}</h6>{{ body }}</div>\r\n<div class=\"col-lg-3 col-md-3 col-sm-4 col-xs-5 field-price\">{{ field_price }}</div>\r\n<div class=\"col-lg-3 col-md-3 col-sm-4 hidden-xs\">{{ field_image }}</div>"
             make_link: false
             path: ''
             absolute: false
@@ -542,6 +609,7 @@ display:
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_device_type'
+        - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_price'
         - 'config:field.storage.node.field_series'
   page_1:
@@ -570,5 +638,6 @@ display:
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_device_type'
+        - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_price'
         - 'config:field.storage.node.field_series'

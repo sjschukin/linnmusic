@@ -22,23 +22,28 @@ p {
 }
 
 h1, .h1 {
-  font-size: 1.8em; color: #000;
+  font-size: 1.8em;
+  color: #000;
 }
 
 h2, .h2 {
-  font-size: 1.6em; color: #000; 
+  font-size: 1.6em;
+  color: #000; 
 }
 
 h3, .h3 {
-  font-size: 1.4em; color: #000; 
+  font-size: 1.4em;
+  color: #000; 
 }
 
 h4, .h4 {
-  font-size: 1.2em; color: #000; 
+  font-size: 1.2em;
+  color: #000; 
 }
 
 img {
-  max-width: 100%; height: auto; 
+  max-width: 100%;
+  height: auto; 
 }
 
 a {
@@ -619,41 +624,59 @@ ul.links.inline li{
 }
 
 /* content */
-.container h1, .container .h1 {
+.content_layout h1, .content_layout .h1 {
   color: #2e2e2e;
+}
+
+.content_layout img {
+  border: #d8d8d8 solid 1px;
+  padding: 5px;
+}
+
+.content_layout .field--type-image .field__items::after,
+.content_layout .field--type-image.field__items::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.content_layout .field--type-image .field__items .field__item,
+.content_layout .field--type-image.field__items .field__item {
+  float: left;
+  padding: 5px 5px 10px 0;
 }
 
 /* product */
 
-.field--name-field-price {
+.content_layout .field--name-field-price {
   font-size: 1.6em;
   color: #000;
   text-align: center;
 }
 
-.field--type-image .field__items .field__item {
-  float: left;
-  padding: 5px 5px 20px 0;
-}
-
 /* products */
 
-.path-products .container .views-row {
+.path-products .content_layout .views-row {
   padding: 5px 0;
 }
 
-.path-products .container h4 {
+.path-products .content_layout h4 {
   display: block;
   background-color: #efefef;
   padding: 5px;
 }
 
-.path-products .container h5 {
+.path-products .content_layout h5 {
   display: block;
   font-style: italic;
+}
+
+.path-products .content_layout h6 {
+  font-size: 1.2em;
 }
 
 .path-products .field-price {
   font-size: 1.2em;
   color: #2e2e2e;
+  text-align: right;
 }
