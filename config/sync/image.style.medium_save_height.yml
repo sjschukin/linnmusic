@@ -1,0 +1,15 @@
+uuid: 942ae8bf-8a22-4c77-b8a9-aae74d6c89ca
+langcode: ru
+status: true
+dependencies: {  }
+name: medium_save_height
+label: 'Medium (220×165, save height)'
+effects:
+  d893994f-74c6-4517-ac30-060ec614ac3e:
+    uuid: d893994f-74c6-4517-ac30-060ec614ac3e
+    id: image_scale
+    weight: 1
+    data:
+      width: 220
+      height: 165
+      upscale: true
