@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.product.field_price
     - field.field.node.product.field_series
     - field.field.node.product.field_unit
-    - image.style.medium
+    - image.style.medium_save_height
     - node.type.product
   module:
     - colorbox
@@ -39,7 +39,7 @@ content:
     weight: 5
     label: above
     settings:
-      colorbox_node_style: medium
+      colorbox_node_style: medium_save_height
       colorbox_node_style_first: ''
       colorbox_image_style: ''
       colorbox_gallery: post
