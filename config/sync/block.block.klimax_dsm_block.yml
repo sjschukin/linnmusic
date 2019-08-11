@@ -1,0 +1,31 @@
+uuid: cca53cf0-5876-4b66-9b95-256c09f918ac
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:46a81a88-9f1d-4252-8b2b-d021259da11c'
+  module:
+    - block_content
+    - system
+  theme:
+    - richtan
+id: klimax_dsm_block
+theme: richtan
+region: bottom_first
+weight: 0
+provider: null
+plugin: 'block_content:46a81a88-9f1d-4252-8b2b-d021259da11c'
+settings:
+  id: 'block_content:46a81a88-9f1d-4252-8b2b-d021259da11c'
+  label: 'Klimax DSM Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
