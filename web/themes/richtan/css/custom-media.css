@@ -99,4 +99,10 @@
   .comment-wrap .author-details{ width: 10%; }
 
   .comment-wrap .author-comments{ width: 90%;}
+
+  /* bottom-widgets */
+
+  .bottom-widgets .region {
+    height: auto;
+  }
 }
