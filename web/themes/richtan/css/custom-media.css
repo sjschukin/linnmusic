@@ -105,4 +105,10 @@
   .bottom-widgets .region {
     height: auto;
   }
+
+  /* blockquote */
+
+  .blockquote p {
+    font-size: 1.6em;
+  }
 }

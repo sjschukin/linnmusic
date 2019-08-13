@@ -67,7 +67,7 @@ ul.links.inline li{
 }
 
 .main-header{
-  background: url(../images/welcome_banner_bg.jpg);
+  background: url(../images/welcome-banner-bg.jpg);
   color: #fff;
   padding: 10px 0;
   margin-bottom: 20px;
@@ -308,11 +308,56 @@ input[type="submit"]:hover{
 
 /* front page */
 
+.path-frontpage .region-content {
+  background: url(../images/frontpage-bg.jpg);
+  background-size: cover;
+  background-color: #4d4f4a;
+  position: relative;
+}
+
+.path-frontpage .region-content:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(21, 22, 26, 0.88);
+}
+
 .path-frontpage .feed-icon {
   display: none;
 }
 
-/*MENU*/
+/* blockquote */
+
+.blockquote-wrapper {
+  display: flex;
+  /* height: 100vh; */
+  padding: 0 20px;
+}
+
+.blockquote {
+  position: relative;
+  font-weight: 800;
+  color: #ffffff;
+  width: 100%;
+  z-index: 1;
+  margin: 80px auto;
+  align-self: center;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+}
+
+.blockquote p {
+  position: relative;
+  color: #ffffff;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 1em 0;
+}
+
+/* menu*/
 
 .navbar-default .navbar-toggle{
   background: #fff;
