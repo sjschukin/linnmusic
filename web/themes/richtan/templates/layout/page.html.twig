@@ -58,8 +58,7 @@
  */
 #}
 
-
-<!-- Header and Navbar -->
+<!--Header and Navbar-->
 <header class="main-header">
   <nav class="navbar navbar-default" role="navigation">
     <div class="container">
@@ -76,13 +75,13 @@
         {% endif %}
       </div>
 
-      <!-- Navigation -->
+      <!--Navigation-->
       <div class="col-md-9">
         {% if page.primary_menu %}
           {{ page.primary_menu }}
-        {% endif %}      
+        {% endif %}
       </div>
-      <!--End Navigation -->
+      <!--End Navigation-->
 
       </div>
     </div>
@@ -101,8 +100,7 @@
   {% endif %}
 
 </header>
-<!--End Header & Navbar -->
-
+<!--End Header & Navbar-->
 
 <!--Highlighted-->
   {% if page.highlighted %}
@@ -116,59 +114,58 @@
   {% endif %}
 <!--End Highlighted-->
 
-
-<!-- Start Top Widget -->
+<!--Start Top Widget-->
 {% if page.topwidget_first or page.topwidget_second or page.topwidget_third %}
   <div class="topwidget">
-    <!-- start: Container -->
+    <!--start: Container-->
     <div class="container">
-      
       <div class="row">
-        <!-- Top widget first region -->
+
+        <!--Top widget first region-->
         <div class={{ topwidget_class }}>
           {% if page.topwidget_first %}
             {{ page.topwidget_first }}
           {% endif %}
         </div>
-        <!-- End top widget third region -->
-        <!-- Top widget second region -->
+        <!--End top widget third region-->
+
+        <!--Top widget second region-->
         <div class={{ topwidget_class }}>
           {% if page.topwidget_second %}
             {{ page.topwidget_second }}
           {% endif %}
         </div>
-        <!-- End top widget third region -->
-        <!-- Top widget third region -->
+        <!--End top widget third region-->
+        
+        <!--Top widget third region-->
         <div class={{ topwidget_third_class }}>
           {% if page.topwidget_third %}
             {{ page.topwidget_third }}
           {% endif %}
         </div>
-        <!-- End top widget third region -->
+        <!--End top widget third region-->
       </div>
     </div>
   </div>
 {% endif %}
-<!--End Top Widget -->
+<!--End Top Widget-->
 
-
-<!-- Page Title -->
+<!--Page Title-->
 {% if page.page_title and not is_front %}
   <div id="page-title">
     <div id="page-title-inner">
-      <!-- start: Container -->
+      <!--start: Container-->
       <div class="container">
         {{ page.page_title }}
       </div>
     </div>
   </div>
 {% endif %}
-<!-- End Page Title -- >
+<!--End Page Title -- >
 
-
-<!-- layout -->
+<!--Layout-->
 <div id="wrapper">
-  <!-- start: Container -->
+  <!--start: Container-->
   <div class="container">
     
     <!--Content top-->
@@ -179,13 +176,13 @@
       {% endif %}
     <!--End Content top-->
     
-    <!--start:content -->
+    <!--start:content-->
     <div class="row">
       <div class="col-md-12">{{ page.breadcrumb }}</div>
     </div>
 
     <div class="row layout">
-      <!--- Start Left SideBar -->
+      <!--- Start Left SideBar-->
       {% if page.sidebar_first %}
         <div class="sidebar" >
           <div class={{sidebarfirst}}>
@@ -193,9 +190,9 @@
           </div>
         </div>
       {% endif %}
-      <!---End Right SideBar -->
+      <!---End Right SideBar-->
 
-      <!--- Start content -->
+      <!--- Start content-->
       {% if page.content %}
         <div class="content_layout">
           <div class={{contentlayout}}>
@@ -203,9 +200,9 @@
           </div>
         </div>
       {% endif %}
-      <!---End content -->
+      <!---End content-->
 
-      <!--- Start Right SideBar -->
+      <!--- Start Right SideBar-->
       {% if page.sidebar_second %}
         <div class="sidebar">
           <div class={{sidebarsecond}}>
@@ -213,10 +210,10 @@
           </div>
         </div>
       {% endif %}
-      <!---End Right SideBar -->
+      <!---End Right SideBar-->
       
     </div>
-    <!--End Content -->
+    <!--End Content-->
 
     <!--Start Content Bottom-->
     {% if page.content_bottom %}
@@ -227,75 +224,73 @@
     <!--End Content Bottom-->
   </div>
 </div>
-<!-- End layout -->
+<!--End layout-->
 
-
-<!-- Start Middle Widget -->
+<!--Start Middle Widget-->
 {% if page.middle_first or page.middle_second or page.middle_third %}
   <div class="middlewidget">
-    <!-- start: Container -->
+    <!--Start: Container-->
     <div class="container">
       
       <div class="row">
-        <!-- Top widget first region -->
+        <!--Top widget first region-->
         <div class={{ middle_class }}>
           {% if page.middle_first %}
             {{ page.middle_first }}
           {% endif %}
         </div>
-        <!-- End top widget third region -->
-        <!-- Top widget second region -->
+        <!--End top widget third region-->
+        <!--Top widget second region-->
         <div class={{ middle_class }}>
           {% if page.middle_second %}
             {{ page.middle_second }}
           {% endif %}
         </div>
-        <!-- End top widget third region -->
-        <!-- Top widget third region -->
+        <!--End top widget third region-->
+        <!--Top widget third region-->
         <div class={{ middle_third_class }}>
           {% if page.middle_third %}
             {{ page.middle_third }}
           {% endif %}
         </div>
-        <!-- End top widget third region -->
+        <!--End top widget third region-->
       </div>
     </div>
   </div>
 {% endif %}
-<!--End Top Widget -->
+<!--End Top Widget-->
 
-
-<!-- Start bottom -->
+<!--Start bottom-->
 {% if page.bottom_first or page.bottom_second or page.bottom_third %}
   <div class="bottom-widgets">
-    <!-- Start Container -->
+    <!--Start Container-->
     <div class="container">
       
       <div class="row">
 
-        <!-- Start Bottom First Region -->
+        <!--Start Bottom First Region-->
         <div class={{ bottom_class }}>
           {% if page.bottom_first %}
             {{ page.bottom_first }}
           {% endif %}
         </div>
-        <!-- End Bottom First Region -->
+        <!--End Bottom First Region-->
 
-        <!-- Start Bottom Second Region -->
+        <!--Start Bottom Second Region-->
         <div class={{ bottom_class }}>
           {% if page.bottom_second %}
             {{ page.bottom_second }}
           {% endif %}
         </div>
-        <!-- End Bottom Second Region -->
+        <!--End Bottom Second Region-->
 
-        <!-- Start Bottom third Region -->
+        <!--Start Bottom third Region-->
         <div class={{ bottom_class }}>
           {% if page.bottom_third %}
             {{ page.bottom_third }}
           {% endif %}
         </div>
-        <!-- End Bottom Third Region -->
+        <!--End Bottom Third Region-->
 
         <div class={{ bottom_class }}>
           {% if page.bottom_forth %}
@@ -307,47 +302,44 @@
     </div>
   </div>
 {% endif %}
-<!--End Bottom -->
+<!--End Bottom-->
 
-
-<!-- start: Footer -->
+<!--Start: Footer-->
 {% if page.footer_first or page.footer_second or page.footer_third %}
   <div class="footerwidget">
     <div class="container">
-      
       <div class="row">
         
-        <!-- Start Footer First Region -->
+        <!--Start Footer First Region-->
         <div class={{ footer_class }}>
           {% if page.footer_first %}
             {{ page.footer_first }}
           {% endif %}
         </div>
-        <!-- End Footer First Region -->
+        <!--End Footer First Region-->
 
-        <!-- Start Footer Second Region -->
+        <!--Start Footer Second Region-->
         <div class={{ footer_class }}>
           {% if page.footer_second %}
             {{ page.footer_second }}
           {% endif %}
         </div>
-        <!-- End Footer Second Region -->
+        <!--End Footer Second Region-->
 
-        <!-- Start Footer third Region -->
+        <!--Start Footer third Region-->
         <div class={{ footer_third_class }}>
           {% if page.footer_third %}
             {{ page.footer_third }}
           {% endif %}
         </div>
-        <!-- End Footer Third Region -->
+        <!--End Footer Third Region-->
       </div>
     </div>
   </div>
 {% endif %}
-<!--End Footer -->
+<!--End Footer-->
 
-
-<!-- Start Footer Menu -->
+<!--Start Footer Menu-->
 {% if page.footer_menu %}
   <div class="footer-menu">
     <div class="container">
@@ -383,40 +375,39 @@
     </div>
   </div>
 {% endif %}
-<!-- End Footer Menu -->
-
+<!--End Footer Menu-->
 
 {% if copyright_text or show_credit_link %}
 <div class="copyright">
   <div class="container">
     <div class="row">
 
-      <!-- Copyright -->
+      <!--Copyright-->
       <div class="col-sm-6 col-md-6">
         {% if copyright_text %}
           <p>{{ copyright_text }}</p>
         {% endif %}
       </div>
-      <!-- End Copyright -->
+      <!--End Copyright-->
 
-      <!-- Credit link -->
+      <!--Credit link-->
       {% if show_credit_link %}
         <div class="col-sm-6 col-md-6">
           <p class="credit-link">Designed by <a href="mailto:s.j.schukin@yandex.ru" target="_blank">sjs</a></p>
         </div>
       {% endif %}
-      <!-- End Credit link -->
-      
+      <!--End Credit link-->
+
     </div>
   </div>
 </div>
 {% endif %}
 
 
-<!-- Google map -->
+<!--Google map-->
 {% if is_front and page.google_map %}
   <div class="google_map">
     {{ page.google_map }}
   </div>
 {% endif %}
-<!-- End Google map -->
+<!--End Google map-->
