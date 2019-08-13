@@ -117,7 +117,7 @@
 <!--Start Top Widget-->
 {% if page.topwidget_first or page.topwidget_second or page.topwidget_third %}
   <div class="topwidget">
-    <!--start: Container-->
+    <!--Start: Container-->
     <div class="container">
       <div class="row">
 
@@ -136,7 +136,7 @@
           {% endif %}
         </div>
         <!--End top widget third region-->
-        
+
         <!--Top widget third region-->
         <div class={{ topwidget_third_class }}>
           {% if page.topwidget_third %}
@@ -154,7 +154,7 @@
 {% if page.page_title and not is_front %}
   <div id="page-title">
     <div id="page-title-inner">
-      <!--start: Container-->
+      <!--Start: Container-->
       <div class="container">
         {{ page.page_title }}
       </div>
@@ -176,13 +176,13 @@
       {% endif %}
     <!--End Content top-->
     
-    <!--start:content-->
+    <!--Start:content-->
     <div class="row">
       <div class="col-md-12">{{ page.breadcrumb }}</div>
     </div>
 
     <div class="row layout">
-      <!--- Start Left SideBar-->
+      <!--Start Left SideBar-->
       {% if page.sidebar_first %}
         <div class="sidebar" >
           <div class={{sidebarfirst}}>
@@ -190,9 +190,9 @@
           </div>
         </div>
       {% endif %}
-      <!---End Right SideBar-->
+      <!--End Right SideBar-->
 
-      <!--- Start content-->
+      <!--Start content-->
       {% if page.content %}
         <div class="content_layout">
           <div class={{contentlayout}}>
@@ -200,9 +200,9 @@
           </div>
         </div>
       {% endif %}
-      <!---End content-->
+      <!--End content-->
 
-      <!--- Start Right SideBar-->
+      <!--Start Right SideBar-->
       {% if page.sidebar_second %}
         <div class="sidebar">
           <div class={{sidebarsecond}}>
@@ -210,7 +210,7 @@
           </div>
         </div>
       {% endif %}
-      <!---End Right SideBar-->
+      <!--End Right SideBar-->
       
     </div>
     <!--End Content-->
