@@ -82,7 +82,7 @@ ul.links.inline li{
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(21, 22, 26, 0.88);
+  background: rgba(21, 22, 26, 0.78);
 }
 
 .main-header nav{
@@ -701,6 +701,34 @@ ul.links.inline li{
 }
 
 /* products */
+
+.container .panel-product-unit {
+  color: #fff;
+  font-size: 1.6em;
+  background-color: #4d4f4a;
+  padding: 90px 30px;
+  margin: 0 0 15px 0;
+  display: block;
+}
+
+.container .panel-product-unit a {
+  color: #fff;
+}
+
+.container .panel-product-unit.music-systems {
+  background: linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.68)), url(../images/panel-unit-bg1.jpg) no-repeat;
+  background-size: cover;
+}
+
+.container .panel-product-unit.hifi-components {
+  background: linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.68)), url(../images/panel-unit-bg2.jpg) no-repeat;
+  background-size: cover;
+}
+
+.container .panel-product-unit.accessories {
+  background: linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.68)), url(../images/panel-unit-bg3.jpg) no-repeat;
+  background-size: cover;
+}
 
 .path-products .content_layout .views-row {
   padding: 5px 0;

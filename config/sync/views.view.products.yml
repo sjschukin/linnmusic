@@ -11,6 +11,12 @@ dependencies:
     - image.style.medium_save_height
     - system.menu.main
     - taxonomy.vocabulary.device_units
+  content:
+    - 'taxonomy_term:device_units:169077ab-d20e-4478-a0ca-982f311ada43'
+    - 'taxonomy_term:device_units:19c54713-ce17-48a0-ab4b-a6c8853ea06f'
+    - 'taxonomy_term:device_units:4b44bc52-ed32-4ed4-be20-fe674a0a6b21'
+    - 'taxonomy_term:device_units:96803170-0d07-4f75-a2af-467e409d63e8'
+    - 'taxonomy_term:device_units:fc9cc924-57e5-4787-8208-a3d393f75aa9'
   module:
     - image
     - node
@@ -139,7 +145,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -556,6 +562,52 @@ display:
           entity_type: taxonomy_term
           entity_field: vid
           plugin_id: bundle
+        tid:
+          id: tid
+          table: taxonomy_term_field_data
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            6: 6
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: device_units
+          hierarchy: false
+          error_message: true
+          entity_type: taxonomy_term
+          entity_field: tid
+          plugin_id: taxonomy_index_tid
       sorts:
         weight:
           id: weight
@@ -583,7 +635,7 @@ display:
           expose:
             label: ''
           plugin_id: standard
-      title: Каталог
+      title: 'Музыкальные системы в комплекте'
       header: {  }
       footer: {  }
       empty: {  }
@@ -605,6 +657,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
@@ -615,18 +668,127 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
+    display_title: 'Music systems'
     position: 1
     display_options:
       display_extenders: {  }
-      path: products
+      path: products/music-systems
       menu:
         type: normal
-        title: Каталог
+        title: 'Музыкальные системы в комплекте'
         description: ''
         expanded: true
-        parent: ''
-        weight: -48
+        parent: 'menu_link_content:b4041dc6-7344-4696-8618-b5ee277987a6'
+        weight: -47
+        context: '0'
+        menu_name: main
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_device_type'
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_price'
+        - 'config:field.storage.node.field_series'
+  page_2:
+    display_plugin: page
+    id: page_2
+    display_title: 'Hi-Fi components'
+    position: 2
+    display_options:
+      display_extenders: {  }
+      title: 'Hi-Fi компоненты'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      filters:
+        status:
+          value: '1'
+          table: taxonomy_term_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: taxonomy_term
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        vid:
+          id: vid
+          table: taxonomy_term_field_data
+          field: vid
+          value:
+            device_units: device_units
+          entity_type: taxonomy_term
+          entity_field: vid
+          plugin_id: bundle
+        tid:
+          id: tid
+          table: taxonomy_term_field_data
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            7: 7
+            20: 20
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: device_units
+          hierarchy: false
+          error_message: true
+          entity_type: taxonomy_term
+          entity_field: tid
+          plugin_id: taxonomy_index_tid
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      path: products/hifi-components
+      menu:
+        type: normal
+        title: 'Hi-Fi компоненты'
+        description: ''
+        expanded: false
+        parent: 'menu_link_content:b4041dc6-7344-4696-8618-b5ee277987a6'
+        weight: 0
         context: '0'
         menu_name: main
     cache_metadata:
@@ -634,6 +796,115 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_device_type'
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_price'
+        - 'config:field.storage.node.field_series'
+  page_3:
+    display_plugin: page
+    id: page_3
+    display_title: Accessories
+    position: 3
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      title: Аксессуары
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      path: products/accessories
+      filters:
+        status:
+          value: '1'
+          table: taxonomy_term_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: taxonomy_term
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        vid:
+          id: vid
+          table: taxonomy_term_field_data
+          field: vid
+          value:
+            device_units: device_units
+          entity_type: taxonomy_term
+          entity_field: vid
+          plugin_id: bundle
+        tid:
+          id: tid
+          table: taxonomy_term_field_data
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            8: 8
+            30: 30
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: device_units
+          hierarchy: false
+          error_message: true
+          entity_type: taxonomy_term
+          entity_field: tid
+          plugin_id: taxonomy_index_tid
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      menu:
+        type: normal
+        title: Аксессуары
+        description: ''
+        expanded: false
+        parent: 'menu_link_content:b4041dc6-7344-4696-8618-b5ee277987a6'
+        weight: 0
+        context: '0'
+        menu_name: main
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
