@@ -11,8 +11,8 @@ dependencies:
     - richtan
 id: thirdwidget
 theme: richtan
-region: topwidget_third
-weight: 0
+region: topwidget_second
+weight: -11
 provider: null
 plugin: 'block_content:679c1451-844e-4358-8014-b1bf0c92656c'
 settings:

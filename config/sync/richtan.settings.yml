@@ -13,7 +13,7 @@ linkedin_url: 'http://www.linkedin.com/company/zymphonies'
 pinterest_url: 'https://www.pinterest.com/zymphonies'
 rss_url: rss.xml
 copyright_text: 'Copyright 2019 All rights reserved'
-show_social_icon: 1
+show_social_icon: 0
 show_credit_link: 1
 show_slideshow: 1
 no_of_slides: '3'
