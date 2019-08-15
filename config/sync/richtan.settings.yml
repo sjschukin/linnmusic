@@ -17,17 +17,17 @@ show_social_icon: 0
 show_credit_link: 1
 show_slideshow: 1
 no_of_slides: '3'
-slide_title_1: 'Drupal 8 zymphonies theme'
-slide_description_1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since.'
-slide_url_1: '#'
+slide_title_1: 'Klimax Exakt Katalyst System'
+slide_description_1: 'Самые продвинутые и высокопроизводительные акустические системы, сочетающие в себе одновременно утонченность и мощь звука в равной степени'
+slide_url_1: /products/klimax-exakt-katalyst-system
 slide_image_path_1: /images/slider/slide_01.jpg
-slide_title_2: 'Best drupal design & development agency'
-slide_description_2: 'long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
-slide_url_2: '#'
+slide_title_2: 'Akubarik Exakt Katalyst System'
+slide_description_2: 'Интеллектуальные, модернизируемые акустические системы Linn созданы в соответствии с самыми высокими стандартами'
+slide_url_2: /products/akubarik-exakt-katalyst-system
 slide_image_path_2: /images/slider/slide_02.jpg
-slide_title_3: 'Marketing agency'
-slide_description_3: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since.'
-slide_url_3: '#'
+slide_title_3: 'Majik 140 System'
+slide_description_3: 'Сделайте свой первый шаг в мир hi-fi с нашими акустическими системами Majik не имеющими аналогов в своей ценовой категории'
+slide_url_3: /products/majik-systems/majik-140-system
 slide_image_path_3: /images/slider/slide_03.jpg
 _core:
   default_config_hash: TY6WLYxZaBJKkY4Trvj8R0VVUW8GmqYeBoAayk5l2vw
