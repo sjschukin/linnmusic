@@ -1,0 +1,39 @@
+uuid: 284d851e-bf78-4ffe-bffa-6089a7d6c1d8
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a3286b0d-3a03-4b9b-9fab-e5dfb134530a'
+  module:
+    - block_content
+    - ctools
+    - system
+  theme:
+    - richtan
+id: map_block
+theme: richtan
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:a3286b0d-3a03-4b9b-9fab-e5dfb134530a'
+settings:
+  id: 'block_content:a3286b0d-3a03-4b9b-9fab-e5dfb134530a'
+  label: Карта
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: /contacts
+    negate: false
+    context_mapping: {  }

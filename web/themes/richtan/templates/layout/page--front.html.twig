@@ -87,7 +87,7 @@
     </div>
   </nav>
 
-  {% if is_front and show_slideshow%}
+  {% if show_slideshow %}
     <div class="container">
       <div class="flexslider">
         <ul class="slides">
@@ -149,19 +149,6 @@
   </div>
 {% endif %}
 <!--End Top Widget-->
-
-<!--Page Title-->
-{% if page.page_title and not is_front %}
-  <div id="page-title">
-    <div id="page-title-inner">
-      <!--Start: Container-->
-      <div class="container">
-        {{ page.page_title }}
-      </div>
-    </div>
-  </div>
-{% endif %}
-<!--End Page Title -- >
 
 <!--Layout-->
 <div id="wrapper">
@@ -350,7 +337,7 @@
 
 
 <!--Google map-->
-{% if is_front and page.google_map %}
+{% if page.google_map %}
   <div class="google_map">
     {{ page.google_map }}
   </div>

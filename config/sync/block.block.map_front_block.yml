@@ -1,0 +1,31 @@
+uuid: 771de5ac-4d46-4521-9aa2-9abd4828c4a7
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a3286b0d-3a03-4b9b-9fab-e5dfb134530a'
+  module:
+    - block_content
+    - system
+  theme:
+    - richtan
+id: map_front_block
+theme: richtan
+region: google_map
+weight: 0
+provider: null
+plugin: 'block_content:a3286b0d-3a03-4b9b-9fab-e5dfb134530a'
+settings:
+  id: 'block_content:a3286b0d-3a03-4b9b-9fab-e5dfb134530a'
+  label: Карта
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
