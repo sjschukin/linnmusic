@@ -136,14 +136,14 @@ ul.links.inline li{
 
 /*top widget*/
 
-.topwidget{
+.topwidget {
   text-align: center;
   padding: 50px 0;
 }
 
-.topwidget .fa{
+.fa.large-icon {
   font-size: 60px;
-  background: #4D4F4A;
+  background: #4d4f4a;
   width: 120px;
   height: 120px;
   padding: 32px;
@@ -152,7 +152,7 @@ ul.links.inline li{
   margin-bottom: 20px;
 }
 
-.topwidget .fa span{
+.topwidget .fa span {
   display: none;
 }
 
@@ -631,41 +631,41 @@ ul.links.inline li{
   margin-bottom: 5px;
 }
 
-.flexslider{
+.flexslider {
   z-index: 1;
   margin-top: 10px;
 }
 
-.flexslider .slides > li{
+.flexslider .slides > li {
   position: relative;
 }
 
-.slider-caption{
+.slider-caption {
   display: none;
   position: absolute;
   z-index: 99;
   width: 40%;
-  background: #0009;
+  background-color: rgba(0, 0, 0, 0.6);
   left: 10px;
   bottom: 10px;
   padding: 20px;
 }
 
-.slider-caption .slider-title{
+.slider-caption .slider-title {
   color: #fff;
   margin-top: 0;
 }
 
-.flex-direction-nav a{
+.flex-direction-nav a {
   padding: 10px;
   color: #000;
 }
 
-.flex-direction-nav a:before{
+.flex-direction-nav a:before {
   color: #000;
 }
 
-.flex-control-paging li a.flex-active{
+.flex-control-paging li a.flex-active {
   background: #fff;
 }
 
