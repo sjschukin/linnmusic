@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.product.field_image
     - field.field.node.product.field_price
     - field.field.node.product.field_series
+    - field.field.node.product.field_short_description
     - field.field.node.product.field_unit
     - image.style.medium_save_height
     - node.type.product
@@ -23,12 +24,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
   field_device_type:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       link: true
@@ -36,7 +37,7 @@ content:
     type: entity_reference_label
     region: content
   field_image:
-    weight: 5
+    weight: 6
     label: above
     settings:
       colorbox_node_style: medium_save_height
@@ -50,7 +51,7 @@ content:
     type: colorbox
     region: content
   field_price:
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       thousand_separator: ' '
@@ -59,12 +60,19 @@ content:
     type: number_integer
     region: content
   field_series:
-    weight: 2
+    weight: 3
     label: inline
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_short_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
     region: content
   links:
     weight: 0
