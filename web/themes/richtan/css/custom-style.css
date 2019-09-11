@@ -47,11 +47,11 @@ img {
 }
 
 a {
-  color: #2a7fff;
+  color: #f31b0a;
 }
 
 a:hover{
-  color: #5599ff;
+  color: #f33535;
 }
 
 ul.links.inline{
@@ -293,7 +293,7 @@ input, button, select, textarea{
 
 .btn, 
 input[type="submit"]{
-  background: #5599ff;
+  background: #f33535;
   color: #fff;
   border: 0;
   padding: 13px;
@@ -303,7 +303,7 @@ input[type="submit"]{
 
 .btn:hover,
 input[type="submit"]:hover{
-  background: #2a7fff;
+  background: #f31b0a;
 }
 
 /* front page */
@@ -379,11 +379,11 @@ nav h2{
 
 .menu-base-theme li a {
   background: #fbfbfb;
-  color: #2a7fff;
+  color: #f31b0a;
 }
 
 .menu-base-theme li a:hover {
-  color: #5599ff;
+  color: #f33535;
 }
 
 .main-menu {
