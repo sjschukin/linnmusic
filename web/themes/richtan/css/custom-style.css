@@ -1,27 +1,9 @@
-/* logo color: #003380
-
-/*Header*/
-
-
-
-p {
-  margin: 0 0 10px 0;
-}
-
-
-
 img {
   max-width: 100%;
   height: auto; 
 }
 
-a {
-  color: #a31b0a;
-}
 
-a:hover{
-  color: #f33535;
-}
 
 ul.links.inline{
   padding: 0;
@@ -31,62 +13,10 @@ ul.links.inline li{
   list-style: none;
 }
 
-.block{
-  margin-bottom: 20px;
-}
 
-.main-header{
-  background: url(../images/welcome-banner-bg.jpg);
-  color: #fff;
-  padding: 10px 0;
-  margin-bottom: 20px;
-  background-size: cover;
-  position: relative;
-}
 
-.main-header:after{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(21, 22, 26, 0.78);
-}
 
-.main-header nav{
-  background: none;
-  border: 0;
-  margin: 0;
-  position: relative;
-  z-index: 2;
-}
 
-.main-header .region{
-  position: relative;
-  z-index: 2;
-}
-
-/*region header*/
-
-.site-branding{
-  margin: 0;
-}
-
-.brand.logo{
-  margin-right: 5px;
-}
-
-.region-header .brand{
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 100%;
-}
-
-.site-name a{
-  font-size: 26px;
-  color: #fff;
-}
 
 /*Banner*/
 
