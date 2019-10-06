@@ -28,7 +28,7 @@ $sm-blue__gradients_amount:                             1% !default;
 // :: 1.2. Breakpoints
 // ----------------------------------------------------------
 
-$sm-blue__desktop-vp:                                   768px !default;     // switch from collapsible to desktop
+$sm-blue__desktop-vp:                                   $media-min-width !default;     // switch from collapsible to desktop
 
 
 // ----------------------------------------------------------

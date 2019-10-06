@@ -5,29 +5,33 @@
   margin-bottom: 20px;
   background-size: cover;
   position: relative;
-}
 
-.main-header:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: $tint;
-}
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $tint;
+  }
 
-.main-header nav {
-  background: none;
-  border: 0;
-  margin: 0;
-  position: relative;
-  z-index: 2;
-}
+  a {
+    color: $white;
+  }
 
-.main-header .region {
-  position: relative;
-  z-index: 2;
+  nav {
+    background: none;
+    border: 0;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  .region {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .brand.logo {
