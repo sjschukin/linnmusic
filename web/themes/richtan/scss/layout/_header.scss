@@ -1,0 +1,54 @@
+.main-header {
+  background: url(../images/welcome-banner-bg.jpg);
+  color: $white;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  background-size: cover;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $tint;
+  }
+
+  a {
+    color: $white;
+  }
+
+  nav {
+    background: none;
+    border: 0;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  .region {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.brand.logo {
+  margin-right: 5px;
+}
+
+.region-header .brand {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 100%;
+}
+
+.site-name a {
+  @include breakpoint(lg) {
+    @include font-size(48px);
+  }
+  @include font-size(36px);
+  color: $white;
+  text-decoration: none;
+}

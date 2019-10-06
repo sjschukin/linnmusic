@@ -4,82 +4,12 @@
     padding: 50px 0;
   }
 
-  .slider-caption{
-    display: inline-block;
-  }
-
-  .region-primary-menu{
-    display: inline-block !important;
-    float: right;
-    width: auto;
-    margin: 0;
-  }
-
-  .menu-base-theme li ul a {
-    color: #f31b0a;
-  }
-
-  .menu-base-theme li ul a:hover {
-    color: #fff;
-  }
-
-  .region-primary-menu,
-  .menu-base-theme li a {
-    background: none;
-    color: #fff;
-  }
-
-  .menu-base-theme a {
-    border: 0;
-    padding: 13px 15px !important;
-  }
-
-  .menu-base-theme > li {
-    border: 0;
-  }
-
-  .menu-base-theme a span.sub-arrow {
-    padding: 0;
-    top: 23px;
-    margin-top: 0;
-    bottom: 2px;
-    right: 0;
-    margin-left: 0;
-    left: auto;
-    width: 0;
-    height: 0;
-    border-width: 5px;
-    border-style: solid dashed dashed dashed;
-    border-color: #fff transparent transparent transparent;
-    background: transparent;
-  }
-
-  .menu-base-theme ul {
-    border: 1px solid #a8a8a8;
-    padding: 0;
-    background-color: #fff;
-    background: rgba(255, 255, 255, 0.74);
-  }
-
-  .menu-base-theme ul.has-submenu li {
-    border-bottom: 1px solid #fff;
-  }
-
   .welcome-banner-text h2{
     font-size: 50px;
   }
 
   .welcome-banner-text{
     font-size: 14px;
-  }
-
-  .bottom-widgets{
-    text-align: left;
-    padding: 50px 0;
-  }
-
-  .footerwidget{
-    padding: 50px 0;
   }
 
   .credit-link{
@@ -99,12 +29,6 @@
   .comment-wrap .author-details{ width: 10%; }
 
   .comment-wrap .author-comments{ width: 90%;}
-
-  /* bottom-widgets */
-
-  .bottom-widgets .region {
-    height: auto;
-  }
 
   /* blockquote */
 

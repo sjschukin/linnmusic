@@ -1,0 +1,46 @@
+.topwidget {
+  text-align: center;
+  padding: 50px 0;
+
+  .fa.large-icon {
+    font-size: 60px;
+    background: $gray;
+    width: 120px;
+    height: 120px;
+    padding: 32px;
+    border-radius: 50%;
+    color: $white;
+    margin-bottom: 20px;
+  }
+
+  .topwidget .fa span {
+    display: none;
+  }
+
+  .btn {
+    margin-bottom: 20px;
+  }
+}
+
+.bottom-widgets {
+  text-align: center;
+  background: $white-smoke;
+  padding: 10px 0;
+
+  .region {
+    padding: 10px;
+    height: 250px;
+    background: $white-smoke;
+  }
+}
+
+@include breakpoint(md) {
+  .bottom-widgets {
+    text-align: left;
+    padding: 50px 0;
+
+    .region {
+      height: auto;
+    }
+  }
+}

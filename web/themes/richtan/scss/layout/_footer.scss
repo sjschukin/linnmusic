@@ -1,0 +1,44 @@
+.footerwidget {
+  color: $gray-light;
+  background: $footer-color;
+  padding: 10px 0;
+
+  a {
+    color: $gray-light;
+  }
+
+  h2, .h2 {
+    color: $white;
+  }
+
+  .btn,
+  input[type="submit"] {
+    background: $black;
+
+    &:hover {
+      background: $gray;
+    }
+  }
+}
+
+.copyright {
+  background: $black;
+  @include font-size(18px);
+  color: $white-dark-smoke;
+  padding: 13px 0;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    color: $white;
+  }
+}
+
+@include breakpoint(md) {
+  .footerwidget {
+    padding: 50px 0;
+  }
+}
