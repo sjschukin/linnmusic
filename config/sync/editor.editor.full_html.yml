@@ -47,9 +47,14 @@ settings:
           items:
             - Format
         -
+          name: Разметка
+          items:
+            - WidgetTemplateMenu
+        -
           name: Tools
           items:
             - ShowBlocks
+            - Maximize
             - Source
   plugins:
     language:
