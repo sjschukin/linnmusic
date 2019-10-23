@@ -48,10 +48,17 @@ settings:
           items:
             - Format
         -
+          name: Разметка
+          items:
+            - WidgetTemplateMenu
+        -
           name: Инструменты
           items:
             - Undo
             - Redo
+            - '-'
+            - Maximize
+            - '-'
             - Source
   plugins:
     language:

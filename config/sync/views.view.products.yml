@@ -551,7 +551,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"col-lg-6 col-md-6 col-sm-4 col-xs-7\"><h6>{{ title }}</h6>{{ field_short_description }}</div>\r\n<div class=\"col-lg-3 col-md-3 col-sm-4 col-xs-5 field-price\">{{ field_price }}</div>\r\n<div class=\"col-lg-3 col-md-3 col-sm-4 hidden-xs\">{{ field_image }}</div>"
+            text: '<div class="col-md-12"><h6>{{ title }}</h6>{{ field_short_description }}</div>'
             make_link: false
             path: ''
             absolute: false
