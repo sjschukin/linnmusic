@@ -5,11 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.product.body
-    - field.field.node.product.field_device_type
-    - field.field.node.product.field_image
     - field.field.node.product.field_price
-    - field.field.node.product.field_series
-    - field.field.node.product.field_short_description
     - field.field.node.product.field_unit
     - node.type.product
   module:
@@ -28,18 +24,8 @@ content:
       thousand_separator: ' '
       prefix_suffix: true
     third_party_settings: {  }
-  field_short_description:
-    type: basic_string
-    weight: 1
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   body: true
-  field_device_type: true
-  field_image: true
-  field_series: true
   field_unit: true
   langcode: true
   links: true

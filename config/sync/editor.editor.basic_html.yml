@@ -50,6 +50,10 @@ settings:
         -
           name: Разметка
           items:
+            - widgetbootstrapLeftCol
+            - widgetbootstrapRightCol
+            - widgetbootstrapTwoCol
+            - widgetbootstrapThreeCol
             - WidgetTemplateMenu
         -
           name: Инструменты

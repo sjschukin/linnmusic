@@ -60,15 +60,11 @@
 
 <!--Header and Navbar-->
 <header class="main-header">
-  <nav class="navbar navbar-default" role="navigation">
+  <nav class="navbar navbar-default bootsnav" role="navigation">
     <div class="container">
-      <div class="row">
-      <div class="navbar-header col-md-3">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+          <i class="fa fa-bars"></i>
         </button>
         {% if page.header %}
           {{ page.header }}
@@ -76,14 +72,13 @@
       </div>
 
       <!--Navigation-->
-      <div class="col-md-9">
-        {% if page.primary_menu %}
+      {% if page.primary_menu %}
+        <div id="navbar-menu" class="collapse navbar-collapse">
           {{ page.primary_menu }}
-        {% endif %}
-      </div>
+        </div>
+      {% endif %}
       <!--End Navigation-->
 
-      </div>
     </div>
   </nav>
 
@@ -114,134 +109,152 @@
   {% endif %}
 <!--End Highlighted-->
 
-<!--Start Top Widget-->
-{% if page.topwidget_first or page.topwidget_second or page.topwidget_third %}
-  <div class="topwidget">
-    <!--start: Container-->
-    <div class="container">
-      <div class="row">
-
-        <!--Top widget first region-->
-        <div class={{ topwidget_class }}>
-          {% if page.topwidget_first %}
-            {{ page.topwidget_first }}
-          {% endif %}
-        </div>
-        <!--End top widget third region-->
-
-        <!--Top widget second region-->
-        <div class={{ topwidget_class }}>
-          {% if page.topwidget_second %}
-            {{ page.topwidget_second }}
-          {% endif %}
-        </div>
-        <!--End top widget third region-->
-        
-        <!--Top widget third region-->
-        <div class={{ topwidget_third_class }}>
-          {% if page.topwidget_third %}
-            {{ page.topwidget_third }}
-          {% endif %}
-        </div>
-        <!--End top widget third region-->
+<!--Layout-->
+<div class="frontpage-widget">
+  <div class="container">
+    <h1>Универсальные проигрыватели</h1>
+    <div class="row">
+      <div class="col-md-5">
+        <a href="#">
+          <img class="img-responsive" src="/sites/default/files/frontpage/klimax-system-hub-black-front-x500.png" alt="Klimax System Hub" />
+        </a>
+      </div>
+      <div class="col-md-7">
+        <h2>Klimax System Hub</h2>
+        <p>Передайте всю свою любимую музыку из облака или по собственной домашней сети и слушайте ее в беспрецедентном качестве. Klimax System Hub будет обрабатывать все, от загрузок Studio Master до потокового вещания Tidal или интернет-радио.</p>
+        <p class="clearfix">
+          <a class="pull-right" href="#" role="button">Подробнее <i class="fa fa-angle-right"><span>&nbsp;</span></i></a>
+        </p>
+      </div>
+    </div>
+    <div class="row tab-content">
+      <div class="col-md-7">
+        <h2>Akurate System Hub</h2>
+        <p>Просматривайте свою цифровую музыкальную библиотеку, транслируйте онлайн музыку и видео и слушайте саундтреки к фильмам, все в исключительных деталях. Этот сетевой музыкальный проигрыватель подключается практически к любому источнику музыки или звука в вашем доме и воспроизводит его безупречно.</p>
+        <p class="clearfix">
+          <a class="pull-right" href="#" role="button">Подробнее <i class="fa fa-angle-right"><span>&nbsp;</span></i></a>
+        </p>
+      </div>
+      <div class="col-md-5">
+        <a href="#">
+          <img class="img-responsive" src="/sites/default/files/frontpage/akurate-system-hub-silver-front-x500.png" alt="Akurate System Hub" />
+        </a>
       </div>
     </div>
   </div>
-{% endif %}
-<!--End Top Widget-->
+</div>
+<div class="frontpage-widget">
+  <div class="container">
+    <h1>Виниловые проигрыватели</h1>
+    <div class="row">
+      <div class="col-md-5">
+        <a href="#">
+          <img class="img-responsive" src="/sites/default/files/frontpage/klimax-lp12-oak-x500.jpg" alt="Klimax LP12" />
+        </a>
+      </div>
+      <div class="col-md-7">
+        <h2>Klimax LP12</h2>
+        <p>Наш флагманский проигрыватель Klimax LP12 сегодня является вершиной воспроизводства, устанавливая мировой стандарт для всех остальных проигрывателей на рынке.</p>
+        <p>Более чем 40-летний опыт исследований и разработок ушел в эту последнюю эволюцию проигрывателя, которая перевернула индустрию Hi-Fi еще в начале пути Linn.</p>
+        <p class="clearfix">
+          <a class="pull-right" href="#" role="button">Подробнее <i class="fa fa-angle-right"><span>&nbsp;</span></i></a>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-7">
+        <h2>Akurate LP12</h2>
+        <p>Воспламените свою страсть к музыке с помощью проигрывателя, который предлагает элегантный дизайн и исключительную производительность.</p>
+        <p>Эта обновленная модель включает отдельный выделенный источник питания, шлифованный чехол, картридж Krystal и тонарм Linn Akito. Обеспечивает потрясающе музыкальное исполнение ваших любимых виниловых пластинок.</p>
+        <p class="clearfix">
+          <a class="pull-right" href="#" role="button">Подробнее <i class="fa fa-angle-right"><span>&nbsp;</span></i></a>
+        </p>
+      </div>
+      <div class="col-md-5">
+        <a href="#">
+          <img class="img-responsive" src="/sites/default/files/frontpage/akurate-lp12-krystal-x500.jpg" alt="Akurate LP12" />
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+        <a href="#">
+          <img class="img-responsive" src="/sites/default/files/frontpage/majik-lp12-black-x500.jpg" alt="Majik LP12" />
+        </a>
+      </div>
+      <div class="col-md-7">
+        <h2>Majik LP12</h2>
+        <p>Идеальный первый шаг к высококачественному воспроизведению винила. Использованы тщательно отобранные компоненты, разработанные компанией Linn, чтобы вы могли оценить культовый тонарм LP12.</p>
+        <p>Революционный проигрыватель, который перевернул индустрию Hi-Fi еще на этапе образования Linn.</p>
+        <p class="clearfix">
+          <a class="pull-right" href="#" role="button">Подробнее <i class="fa fa-angle-right"><span>&nbsp;</span></i></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
-<!--Layout-->
-<div id="wrapper">
-  <!--Start content-->
-  {{ page.content }}
-  <!--End content-->
+<div class="frontpage-widget-grey">
+  <div class="container">
+    <h1>Усилители мощности</h1>
+    <div class="col-md-3">
+      <h3>Klimax DSM</h3>
+      <p>
+        <a href="/products/klimax/klimax-dsm">
+          <img class="img-responsive" src="/sites/default/files/frontpage/klimax-dsm.png" alt="Klimax DSM" />
+        </a>
+      </p>
+      <p>Для тех, кто ищет лучшее.</p>
+      <p class="clearfix">
+        <a class="pull-right" href="#" role="button">Подробнее <i class="fa fa-angle-right"><span>&nbsp;</span></i></a>
+      </p>
+    </div>
+    <div class="col-md-3">
+      <h3>Akurate DSM</h3>
+      <p>
+        <a href="/products/akurate/akurate-dsm">
+          <img class="img-responsive" src="/sites/default/files/frontpage/akurate-dsm.png" alt="Akurate DSM" />
+        </a>
+      </p>
+      <p>Сочетание производительности и гибкости.</p>
+      <p class="clearfix">
+        <a class="pull-right" href="#" role="button">Подробнее <i class="fa fa-angle-right"><span>&nbsp;</span></i></a>
+      </p>
+    </div>
+    <div class="col-md-3">
+      <h3>Selekt DSM</h3>
+      <p>
+        <a href="/products/selekt/selekt-dsm">
+          <img class="img-responsive" src="/sites/default/files/frontpage/selekt-dsm.png" alt="Selekt DSM" />
+        </a>
+      </p>
+      <p>Выберите наиболее подходящую для вас систему.</p>
+      <p class="clearfix">
+        <a class="pull-right" href="#" role="button">Подробнее <i class="fa fa-angle-right"><span>&nbsp;</span></i></a>
+      </p>
+    </div>
+    <div class="col-md-3">
+      <h3>Majik DSM</h3>
+      <p>
+        <a href="/products/majik/majik-dsm">
+          <img class="img-responsive" src="/sites/default/files/frontpage/majik-dsm.png" alt="Majik DSM" />
+        </a>
+      </p>
+      <p>Остаётся только добавить колонки</p>
+      <p class="clearfix">
+        <a class="pull-right" href="#" role="button">Подробнее <i class="fa fa-angle-right"><span>&nbsp;</span></i></a>
+      </p>
+    </div>
+  </div>
 </div>
 <!--End layout-->
-
-<!--Start Middle Widget-->
-{% if page.middle_first or page.middle_second or page.middle_third %}
-  <div class="middlewidget">
-    <!--Start: Container-->
-    <div class="container">
-      
-      <div class="row">
-        <!--Top widget first region-->
-        <div class={{ middle_class }}>
-          {% if page.middle_first %}
-            {{ page.middle_first }}
-          {% endif %}
-        </div>
-        <!--End top widget third region-->
-        <!--Top widget second region-->
-        <div class={{ middle_class }}>
-          {% if page.middle_second %}
-            {{ page.middle_second }}
-          {% endif %}
-        </div>
-        <!--End top widget third region-->
-        <!--Top widget third region-->
-        <div class={{ middle_third_class }}>
-          {% if page.middle_third %}
-            {{ page.middle_third }}
-          {% endif %}
-        </div>
-        <!--End top widget third region-->
-      </div>
-    </div>
-  </div>
-{% endif %}
-<!--End Top Widget-->
-
-<!--Start bottom-->
-{% if page.bottom_first or page.bottom_second or page.bottom_third %}
-  <div class="bottom-widgets">
-    <!--Start Container-->
-    <div class="container">
-      
-      <div class="row">
-
-        <!--Start Bottom First Region-->
-        <div class={{ bottom_class }}>
-          {% if page.bottom_first %}
-            {{ page.bottom_first }}
-          {% endif %}
-        </div>
-        <!--End Bottom First Region-->
-
-        <!--Start Bottom Second Region-->
-        <div class={{ bottom_class }}>
-          {% if page.bottom_second %}
-            {{ page.bottom_second }}
-          {% endif %}
-        </div>
-        <!--End Bottom Second Region-->
-
-        <!--Start Bottom third Region-->
-        <div class={{ bottom_class }}>
-          {% if page.bottom_third %}
-            {{ page.bottom_third }}
-          {% endif %}
-        </div>
-        <!--End Bottom Third Region-->
-
-        <div class={{ bottom_class }}>
-          {% if page.bottom_forth %}
-            {{ page.bottom_forth }}
-          {% endif %}
-        </div>
-
-      </div>
-    </div>
-  </div>
-{% endif %}
-<!--End Bottom-->
 
 <!--Start: Footer-->
 {% if page.footer_first or page.footer_second or page.footer_third %}
   <div class="footerwidget">
     <div class="container">
       <div class="row">
-        
+
         <!--Start Footer First Region-->
         <div class={{ footer_class }}>
           {% if page.footer_first %}

@@ -11,13 +11,12 @@ dependencies:
 _core:
   default_config_hash: ezK5Dw8P_4bqJdDQIiecSAJak9p1Wf1yDwHzTutGFuQ
 id: frontpage
-label: Frontpage
+label: 'Главная страница'
 module: node
-description: 'All content promoted to the front page.'
+description: 'Все материалы, выведенные на главную страницу.'
 tag: default
 base_table: node_field_data
 base_field: nid
-core: 8.x
 display:
   default:
     display_options:
@@ -31,7 +30,7 @@ display:
       empty:
         area_text_custom:
           admin_label: ''
-          content: 'No front page content has been created yet.<br/>Follow the <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/index.html">User Guide</a> to start building your site.'
+          content: 'Материалов для отображения на главной странице еще не создано.<br>Следуйте <a target="_blank" href="https://www.drupal.org/ru/docs/user_guide/ru/index.html">Руководству Пользователя</a> для начала создания сайта.'
           empty: true
           field: area_text_custom
           group_type: group
@@ -61,18 +60,18 @@ display:
           admin_label: ''
           label: ''
           empty: true
-          title: 'Welcome to [site:name]'
+          title: 'Приветствуем на сайте [site:name]'
           plugin_id: title
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Применить
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Сбросить
+          exposed_sorts_label: 'Сортировать по'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: 'По возрастанию'
+          sort_desc_label: 'По убыванию'
       filters:
         promote:
           admin_label: ''
@@ -88,6 +87,8 @@ display:
               authenticated: authenticated
             required: false
             use_operator: false
+            operator_limit_selection: false
+            operator_list: {  }
           exposed: false
           field: promote
           group: 1
@@ -115,6 +116,8 @@ display:
         status:
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           field: status
           group: 1
           id: status
@@ -148,6 +151,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -172,17 +177,17 @@ display:
           total_pages: 0
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Элементов на страницу'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Все -'
             offset: false
-            offset_label: Offset
+            offset_label: Пропустить
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: '‹ Предыдущий'
+            next: 'Следующий ›'
+            first: '« Первая'
+            last: 'Последняя »'
           quantity: 9
       query:
         type: views_query
@@ -241,7 +246,7 @@ display:
       arguments: {  }
       display_extenders: {  }
     display_plugin: default
-    display_title: Master
+    display_title: Основной
     id: default
     position: 0
     cache_metadata:
@@ -255,7 +260,7 @@ display:
   feed_1:
     display_plugin: feed
     id: feed_1
-    display_title: Feed
+    display_title: 'Поток данных'
     position: 2
     display_options:
       sitename_title: true
@@ -292,7 +297,7 @@ display:
       path: node
       display_extenders: {  }
     display_plugin: page
-    display_title: Page
+    display_title: Страница
     id: page_1
     position: 1
     cache_metadata:

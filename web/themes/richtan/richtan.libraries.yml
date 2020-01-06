@@ -16,10 +16,10 @@ global-components:
   Version: 1.x
   css:
     theme:
-      css/main.css: {}
       css/base.css: {}
       css/custom-style.css: {}
       css/custom-media.css: {}
+      css/main.css: {}
   js:
     js/custom.js: {}
   dependencies:
@@ -47,13 +47,13 @@ fontawesome:
     theme:
       includes/fontawesome/css/all.min.css: {}
 
-# smartmenus
-smartmenus:
+# bootsnav
+bootsnav:
   version: 1.x
   css:
     theme:
-      includes/smartmenus/sm-core-css.css: {}
+      includes/bootsnav/css/bootsnav.css: {}
   js:
-    includes/smartmenus/jquery.smartmenus.min.js: {}
+    includes/bootsnav/js/bootsnav.js: {}
   dependencies:
     - core/jquery

@@ -4,10 +4,11 @@ status: true
 dependencies:
   module:
     - editor
+    - inline_responsive_images
     - video_embed_wysiwyg
 _core:
   default_config_hash: WNeK5FbcY8pXgEpbD_KgRzlF1-5PL3BJXwqaBctPTqw
-name: 'Full HTML'
+name: 'Полный HTML'
 format: full_html
 weight: 2
 filters:
@@ -15,31 +16,31 @@ filters:
     id: filter_align
     provider: filter
     status: true
-    weight: 8
+    weight: -50
     settings: {  }
   filter_caption:
     id: filter_caption
     provider: filter
     status: true
-    weight: 9
+    weight: -47
     settings: {  }
   filter_htmlcorrector:
     id: filter_htmlcorrector
     provider: filter
-    status: true
-    weight: 10
+    status: false
+    weight: -44
     settings: {  }
   editor_file_reference:
     id: editor_file_reference
     provider: editor
     status: true
-    weight: 11
+    weight: -46
     settings: {  }
   filter_html:
     id: filter_html
     provider: filter
     status: false
-    weight: -10
+    weight: -43
     settings:
       allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p> <h1> <pre>'
       filter_html_help: true
@@ -48,5 +49,51 @@ filters:
     id: video_embed_wysiwyg
     provider: video_embed_wysiwyg
     status: true
-    weight: 0
+    weight: -49
+    settings: {  }
+  filter_imagestyle:
+    id: filter_imagestyle
+    provider: inline_responsive_images
+    status: false
+    weight: -40
+    settings:
+      image_style_large: '0'
+      image_style_max_1300x1300: '0'
+      image_style_max_325x325: '0'
+      image_style_max_650x650: '0'
+      image_style_medium: '0'
+      image_style_medium_save_height: '0'
+      image_style_thumbnail: '0'
+      image_style_video_embed_wysiwyg_preview: '0'
+  filter_responsive_image_style:
+    id: filter_responsive_image_style
+    provider: inline_responsive_images
+    status: true
+    weight: -48
+    settings:
+      responsive_style_narrow: '1'
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: -45
+    settings:
+      filter_url_length: 72
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: false
+    weight: -39
+    settings: {  }
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: false
+    weight: -42
+    settings: {  }
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: false
+    weight: -41
     settings: {  }

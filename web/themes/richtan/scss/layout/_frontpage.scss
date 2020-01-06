@@ -1,0 +1,28 @@
+.frontpage-widget-grey {
+  background: $white-smoke;
+  padding: 10px 0;
+
+  .region {
+    padding: 10px;
+    height: 250px;
+    background: $white-smoke;
+  }
+}
+
+.frontpage-widget {
+  margin: 40px 0;
+
+  img {
+    margin: 20px auto;
+  }
+}
+
+@include breakpoint(md) {
+  .frontpage-widget-grey {
+    padding: 50px 0;
+
+    .region {
+      height: auto;
+    }
+  }
+}

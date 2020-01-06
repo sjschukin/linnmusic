@@ -1,0 +1,31 @@
+uuid: 8eb79e19-da57-4bd3-8304-4e0b5a147276
+langcode: ru
+status: true
+dependencies:
+  config:
+    - image.style.max_1300x1300
+    - image.style.max_650x650
+  theme:
+    - richtan
+_core:
+  default_config_hash: xAduWBNBoi9WKBMCoVIKSueNYqPK84SiiZwQYKPbkaE
+id: narrow
+label: Narrow
+image_style_mappings:
+  -
+    breakpoint_id: richtan.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_1300x1300
+  -
+    breakpoint_id: richtan.screen-md-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_650x650
+  -
+    breakpoint_id: richtan.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_650x650
+breakpoint_group: richtan
+fallback_image_style: max_650x650

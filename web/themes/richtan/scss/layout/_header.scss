@@ -1,54 +1,110 @@
-.main-header {
-  background: url(../images/welcome-banner-bg.jpg);
-  color: $white;
-  padding: 10px 0;
-  margin-bottom: 20px;
-  background-size: cover;
-  position: relative;
-
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: $tint;
+ .main-header {
+  .navbar.bootsnav {
+    margin-bottom: 0;
+    border-radius: 0px;
+    background-color: $black;
+    border: none;
+    border-bottom: solid 1px #e0e0e0;
+    color: $white;
+    z-index: 9;
   }
 
+
+//   background: url(../images/welcome-banner-bg.jpg);
+//   color: $white;
+//   padding: 10px 0;
+//   margin-bottom: 20px;
+//   background-size: cover;
+//   position: relative;
+
+//   &:after {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background: $tint;
+//   }
+
+//   a {
+//     color: $white;
+//   }
+
+//   nav {
+//     background: none;
+//     border: 0;
+//     margin: 0;
+//     position: relative;
+//     z-index: 2;
+//   }
+
+//   .region {
+//     position: relative;
+//     z-index: 2;
+//   }
+}
+
+.site-brand {
+  float: left;
+  height: 70px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+
   a {
+    @include breakpoint(lg) {
+      @include font-size(48px);
+    }
+    @include font-size(36px);
+    text-decoration: none;
     color: $white;
   }
 
-  nav {
-    background: none;
-    border: 0;
-    margin: 0;
-    position: relative;
-    z-index: 2;
-  }
-
-  .region {
-    position: relative;
-    z-index: 2;
+  .logo {
+    margin-right: 5px;
   }
 }
 
-.brand.logo {
-  margin-right: 5px;
-}
+@include breakpoint(sd) {
+  nav.navbar.bootsnav {
+    .site-brand {
+      display: inline-block;
+      float: none !important;
+      margin: 0 !important;
+    }
 
-.region-header .brand {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 100%;
-}
+    .navbar-header {
+      float: none;
+      display: block;
+      text-align: center;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
 
-.site-name a {
-  @include breakpoint(lg) {
-    @include font-size(48px);
+    .navbar-toggle {
+      display: inline-block;
+      float: left;
+      margin-right: -200px;
+      margin-top: 10px;
+    }
+
+    .navbar-collapse {
+      border: none;
+      margin-bottom: 0;
+    }
+
+    &.no-full .navbar-collapse {
+      max-height: 350px;
+      overflow-y: auto !important;
+    }
+
+    .navbar-collapse.collapse {
+      display: none !important;
+
+      &.collapse.in {
+        display: block !important;
+      }
+    }
   }
-  @include font-size(36px);
-  color: $white;
-  text-decoration: none;
 }

@@ -27,23 +27,67 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul id="main-menu" {{ attributes.addClass('sm', 'menu-base-theme') }}>
+      <ul {{ attributes.addClass('nav', 'navbar-nav', 'navbar-right').setAttribute('data-in', 'fadeInDown').setAttribute('data-out', 'fadeOutUp') }}>
     {% else %}
       <ul>
     {% endif %}
     {% for item in items %}
-      {% if menu_level == 0 and item.is_expanded %}
-        <li>
-        <a href="{{ item.url }}" data-target="#" data-toggle="dropdown">{{ item.title }}</a>
+      {% if menu_level == 0 and item.title == 'Каталог' %}
+        {{ menus.mega_menu(item) }}
       {% else %}
-        <li{{ item.attributes }}>
-        {{ link(item.title, item.url) }}
+        {% if menu_level == 0 and item.is_expanded %}
+          <li>
+            <a href="{{ item.url }}" data-target="#" data-toggle="dropdown">{{ item.title }}</a>
+        {% else %}
+          <li{{ item.attributes }}>
+            {{ link(item.title, item.url) }}
+        {% endif %}
+        {% if item.below %}
+            {{ menus.menu_links(item.below, attributes.removeClass('nav', 'navbar-nav'), menu_level + 1) }}
+        {% endif %}
+          </li>
       {% endif %}
-      {% if item.below %}
-        {{ menus.menu_links(item.below, attributes.removeClass('nav', 'navbar-nav'), menu_level + 1) }}
-      {% endif %}
-      </li>
     {% endfor %}
+      </ul>
+  {% endif %}
+{% endmacro %}
+
+{% macro mega_menu(item) %}
+  {% import _self as menus %}
+  <li class="dropdown megamenu-fw">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ item.title }}</a>
+    {% if item.below %}
+      <ul class="dropdown-menu megamenu-content" role="menu">
+        <li>
+          {{ menus.mega_menu_headers(item.below) }}
+        </li>
+      </ul>
+    {% endif %}
+  </li>
+{% endmacro %}
+
+{% macro mega_menu_headers(items) %}
+  {% import _self as menus %}
+  {% for chunk in items|batch(3) %}
+    <div class="row">
+      {% for item in chunk %}
+        <div class="col-menu col-md-4">
+          <h5 class="title">{{ item.title }}</h5>
+          <div class="content">
+            {{ menus.mega_menu_subitems(item.below) }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+{% endmacro %}
+
+{% macro mega_menu_subitems(items) %}
+  {% if items %}
+    <ul class="menu-col">
+      {% for item in items %}
+        <li>{{ link(item.title, item.url) }}</li>
+      {% endfor %}
     </ul>
   {% endif %}
 {% endmacro %}

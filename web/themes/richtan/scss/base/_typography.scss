@@ -1,17 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700&display=swap&subset=cyrillic');
 
-// Fonts
-$fontDefault: "Montserrat", Helvetica, Arial, sans-serif;
-
-// Font Weights
-$thin: 300;
-$normal: 400;
-$bold: 700;
-
 body {
   font-family: $fontDefault;
   font-weight: $normal;
-  font-size: 14px;
+  font-size: $fontsize-normal;
   line-height: 1.7;
   color: $gray;
   overflow-x: hidden;
@@ -31,6 +23,7 @@ h1 {
   @include font-size(50px);
   line-height: 1;
   margin: 0 0 1rem 0;
+
   @include breakpoint(md) {
     @include font-size(60px);
     margin: 0 0 2rem 0;
@@ -62,9 +55,9 @@ h6 {
 a {
   color: $black;
   text-decoration: underline dotted;
-}
 
-a:hover {
-  color: $black;
-  text-decoration: underline dotted;
+  &:hover {
+    color: $black;
+    text-decoration: underline dotted;
+  }
 }
