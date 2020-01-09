@@ -2,9 +2,13 @@ uuid: b4cbf387-8433-43d7-b75d-33c5bf8f561a
 langcode: ru
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - core.entity_view_mode.media.responsive_image
   module:
     - editor
     - inline_responsive_images
+    - media
     - video_embed_wysiwyg
 _core:
   default_config_hash: P8ddpAIKtawJDi5SzOwCzVnnNYqONewSTJ6Xn0dW_aQ
@@ -18,7 +22,7 @@ filters:
     status: true
     weight: -50
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <p> <br> <span> <img src alt data-entity-type data-entity-uuid data-responsive-image-style data-align data-caption width height> <u> <s> <table class> <caption> <tbody> <thead class> <tfoot class> <th class> <td class> <tr class> <iframe> <div class>'
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <p> <br> <span> <img src alt data-entity-type data-entity-uuid data-responsive-image-style data-align data-caption width height> <u> <s> <table class> <caption> <tbody> <thead class> <tfoot class> <th class> <td class> <tr class> <iframe> <div class> <drupal-media data-entity-type data-entity-uuid>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_align:
@@ -37,7 +41,7 @@ filters:
     id: filter_html_image_secure
     provider: filter
     status: false
-    weight: -43
+    weight: -42
     settings: {  }
   editor_file_reference:
     id: editor_file_reference
@@ -62,30 +66,31 @@ filters:
     id: filter_htmlcorrector
     provider: filter
     status: false
-    weight: -40
+    weight: -39
     settings: {  }
   filter_html_escape:
     id: filter_html_escape
     provider: filter
     status: false
-    weight: -42
+    weight: -41
     settings: {  }
   filter_autop:
     id: filter_autop
     provider: filter
     status: false
-    weight: -41
+    weight: -40
     settings: {  }
   filter_imagestyle:
     id: filter_imagestyle
     provider: inline_responsive_images
     status: false
-    weight: -39
+    weight: -38
     settings:
       image_style_large: '0'
       image_style_max_1300x1300: '0'
       image_style_max_325x325: '0'
       image_style_max_650x650: '0'
+      image_style_media_library: '0'
       image_style_medium: '0'
       image_style_medium_save_height: '0'
       image_style_thumbnail: '0'
@@ -97,3 +102,17 @@ filters:
     weight: -48
     settings:
       responsive_style_narrow: '1'
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: -43
+    settings:
+      default_view_mode: responsive_image
+      allowed_media_types:
+        image: image
+        remote_video: remote_video
+      allowed_view_modes:
+        default: default
+        full: full
+        responsive_image: responsive_image

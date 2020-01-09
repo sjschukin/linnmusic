@@ -42,6 +42,7 @@ settings:
             - SpecialChar
             - Blockquote
             - DrupalImage
+            - DrupalMediaLibrary
             - video_embed
         -
           name: Стили

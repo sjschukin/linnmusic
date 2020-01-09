@@ -51,9 +51,6 @@ display:
                 title: Опубликовано
               2:
                 title: 'Снято с публикации'
-        langcode:
-          expose:
-            label: Язык
       title: Содержимое
       empty:
         area_text_custom:

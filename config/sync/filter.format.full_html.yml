@@ -2,9 +2,13 @@ uuid: c15684fe-5109-4b77-ac34-aabaa4087e16
 langcode: ru
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - core.entity_view_mode.media.media_library
   module:
     - editor
     - inline_responsive_images
+    - media
     - video_embed_wysiwyg
 _core:
   default_config_hash: WNeK5FbcY8pXgEpbD_KgRzlF1-5PL3BJXwqaBctPTqw
@@ -61,6 +65,7 @@ filters:
       image_style_max_1300x1300: '0'
       image_style_max_325x325: '0'
       image_style_max_650x650: '0'
+      image_style_media_library: '0'
       image_style_medium: '0'
       image_style_medium_save_height: '0'
       image_style_thumbnail: '0'
@@ -97,3 +102,19 @@ filters:
     status: false
     weight: -41
     settings: {  }
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_media_types:
+        audio: audio
+        document: document
+        image: image
+        remote_video: remote_video
+      allowed_view_modes:
+        default: default
+        full: full
+        media_library: media_library
