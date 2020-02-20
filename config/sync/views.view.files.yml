@@ -8,13 +8,12 @@ dependencies:
 _core:
   default_config_hash: rRWxAX-IQkJ5viACQRovRkC784EyCl9493GU_G23n2Q
 id: files
-label: Files
+label: Файлы
 module: file
-description: 'Find and manage files.'
+description: 'Поиск файлов и управление ими.'
 tag: default
 base_table: file_managed
 base_field: fid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -250,7 +249,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'MIME type'
+          label: MIME-тип
           exclude: false
           alter:
             alter_text: false
@@ -302,7 +301,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Size
+          label: Размер
           exclude: false
           alter:
             alter_text: false
@@ -398,8 +397,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_false: Temporary
-            format_custom_true: Permanent
+            format_custom_false: Временный
+            format_custom_true: Постоянный
           plugin_id: field
           entity_type: file
           entity_field: status
@@ -410,7 +409,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Upload date'
+          label: 'Дата отгрузки'
           exclude: false
           alter:
             alter_text: false
@@ -466,7 +465,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Changed date'
+          label: 'Дата изменения'
           exclude: false
           alter:
             alter_text: false
@@ -522,7 +521,7 @@ display:
           relationship: fid
           group_type: sum
           admin_label: ''
-          label: 'Used in'
+          label: 'Используется в'
           exclude: false
           alter:
             alter_text: false
@@ -586,7 +585,7 @@ display:
           exposed: true
           expose:
             operator_id: filemime_op
-            label: Filename
+            label: 'Имя файла'
             description: ''
             use_operator: false
             operator: filename_op
@@ -598,6 +597,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -626,7 +627,7 @@ display:
           exposed: true
           expose:
             operator_id: filemime_op
-            label: 'MIME type'
+            label: MIME-тип
             description: ''
             use_operator: false
             operator: filemime_op
@@ -638,6 +639,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -679,6 +682,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -695,7 +700,7 @@ display:
           entity_type: file
           entity_field: status
       sorts: {  }
-      title: Files
+      title: Файлы
       header: {  }
       footer: {  }
       empty:
@@ -704,7 +709,7 @@ display:
           table: views
           field: area_text_custom
           empty: true
-          content: 'No files available.'
+          content: 'Нет доступных файлов.'
           plugin_id: text_custom
       relationships:
         fid:
@@ -731,13 +736,13 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: 'Files overview'
+    display_title: 'Обзор файлов'
     position: 1
     display_options:
       path: admin/content/files
       menu:
         type: tab
-        title: Files
+        title: Файлы
         description: ''
         menu_name: admin
         weight: 0
@@ -768,7 +773,7 @@ display:
   page_2:
     display_plugin: page
     id: page_2
-    display_title: 'File usage'
+    display_title: 'Использование файла'
     position: 2
     display_options:
       display_description: ''
@@ -816,7 +821,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Entity
+          label: Сущность
           exclude: false
           alter:
             alter_text: false
@@ -866,7 +871,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Entity type'
+          label: 'Тип сущности'
           exclude: false
           alter:
             alter_text: false
@@ -915,7 +920,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Registering module'
+          label: 'Регистрация модуля'
           exclude: false
           alter:
             alter_text: false
@@ -964,7 +969,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Use count'
+          label: 'Используемое количество'
           exclude: false
           alter:
             alter_text: false
@@ -1015,7 +1020,7 @@ display:
           suffix: ''
           plugin_id: numeric
       group_by: false
-      title: 'File usage'
+      title: 'Использование файла'
       arguments:
         fid:
           id: fid
@@ -1030,7 +1035,7 @@ display:
             title_enable: false
             title: All
           title_enable: true
-          title: 'File usage information for {{ arguments.fid }}'
+          title: 'Информация про использование файла для {{ arguments.fid }}'
           default_argument_type: fixed
           default_argument_options:
             argument: ''

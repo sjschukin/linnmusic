@@ -4,16 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.product.body
-    - field.field.node.product.field_device_type
-    - field.field.node.product.field_image
     - field.field.node.product.field_price
-    - field.field.node.product.field_series
-    - field.field.node.product.field_short_description
     - field.field.node.product.field_unit
-    - image.style.thumbnail
     - node.type.product
   module:
-    - image
+    - path
     - text
 id: node.product.default
 targetEntityType: node
@@ -22,62 +17,38 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 6
+    weight: 2
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
-    region: content
-  field_device_type:
-    weight: 4
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_image:
-    weight: 5
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
     region: content
   field_price:
-    weight: 7
+    weight: 3
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
-  field_series:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_short_description:
-    weight: 1
-    settings:
-      rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textarea
-    region: content
   field_unit:
-    weight: 2
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 4
     region: content
     third_party_settings: {  }
   title:
@@ -91,7 +62,6 @@ content:
 hidden:
   created: true
   langcode: true
-  path: true
   promote: true
   sticky: true
   uid: true

@@ -8,13 +8,12 @@ dependencies:
 _core:
   default_config_hash: BmeDSOTSaTVy5QLgxgJ5ye_ZseG5t88JXRP1apFoBkk
 id: block_content
-label: 'Custom block library'
+label: 'Пользовательские блоки'
 module: views
-description: 'Find and manage custom blocks.'
+description: 'Поиск и управление пользовательскими блоками.'
 tag: default
 base_table: block_content_field_data
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -40,7 +39,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Применить
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -122,7 +121,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Block description'
+          label: 'Описание блока'
           exclude: false
           alter:
             alter_text: false
@@ -187,7 +186,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Block type'
+          label: 'Тип блока'
           exclude: false
           alter:
             alter_text: false
@@ -366,7 +365,7 @@ display:
           exposed: true
           expose:
             operator_id: info_op
-            label: 'Block description'
+            label: 'Описание блока'
             description: ''
             use_operator: false
             operator: info_op
@@ -378,6 +377,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -406,7 +407,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: 'Block type'
+            label: 'Тип блока'
             description: ''
             use_operator: false
             operator: type_op
@@ -419,6 +420,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -457,6 +460,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -473,7 +478,7 @@ display:
           entity_field: reusable
           plugin_id: boolean
       sorts: {  }
-      title: 'Custom block library'
+      title: 'Пользовательские блоки'
       header: {  }
       footer: {  }
       empty:
@@ -486,7 +491,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'There are no custom blocks available.'
+          content: 'Нет доступных пользовательских блоков.'
           plugin_id: text_custom
         block_content_listing_empty:
           admin_label: ''
@@ -521,7 +526,7 @@ display:
       path: admin/structure/block/block-content
       menu:
         type: tab
-        title: 'Custom block library'
+        title: 'Пользовательские блоки'
         description: ''
         parent: block.admin_display
         weight: 0

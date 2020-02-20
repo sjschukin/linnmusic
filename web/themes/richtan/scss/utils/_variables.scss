@@ -1,6 +1,22 @@
 // Layout
 $min-width-lg: 1200px;
-$min-width-md: 768px;
+$min-width-md: 992px;
+
+// Fonts
+$fontDefault: "Montserrat", Helvetica, Arial, sans-serif;
+$fontAwesome: "FontAwesome";
+
+// Font sizes
+$fontsize-normal: 14px;
+$fontsize-sm: 16px;
+$fontsize-md: 18px;
+$fontsize-lg: 24px;
+$fontsize-price: 48px;
+
+// Font Weights
+$thin: 300;
+$normal: 400;
+$bold: 700;
 
 // Color Variables
 $white: #ffffff;
@@ -12,3 +28,7 @@ $black: #000000;
 $footer-color: #2e2e2e;
 $tint: rgba(21, 22, 26, 0.78);
 $white-transparent: rgba(255, 255, 255, 0.74);
+
+// Margin sizes
+$size-sm: 15px;
+$size-md: 30px;

@@ -10,13 +10,12 @@ dependencies:
 _core:
   default_config_hash: _12Vkw1VGBz_s0_W_LLVCrBPpioNSnB6zcd1lUAQubM
 id: glossary
-label: Glossary
+label: Глоссарий
 module: node
-description: 'All content, by letter.'
+description: 'Все материалы, по алфавиту.'
 tag: default
 base_table: node_field_data
 base_field: nid
-core: '8'
 display:
   default:
     id: default
@@ -43,7 +42,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Применить
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -77,7 +76,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Title
+          label: Заголовок
           exclude: false
           alter:
             alter_text: false
@@ -176,7 +175,7 @@ display:
           id: changed
           table: node_field_data
           field: changed
-          label: 'Last update'
+          label: 'Последнее обновление'
           type: timestamp
           settings:
             date_format: long
@@ -336,6 +335,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -364,7 +365,7 @@ display:
       tags: {  }
   attachment_1:
     id: attachment_1
-    display_title: Attachment
+    display_title: Вложение
     display_plugin: attachment
     position: 2
     display_options:
@@ -442,7 +443,7 @@ display:
       path: glossary
       menu:
         type: normal
-        title: Glossary
+        title: Глоссарий
         weight: 0
         menu_name: main
         parent: ''

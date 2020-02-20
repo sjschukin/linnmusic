@@ -11,7 +11,7 @@ libraries:
   - richtan/bootstrap
   - richtan/fontawesome
   - richtan/flexslider
-  - richtan/smartmenus
+  - richtan/bootsnav
   - richtan/global-components
 
 #Regions
@@ -19,25 +19,12 @@ regions:
   header: 'Header'
   primary_menu: 'Primary Menu'
 
-  topwidget_first: 'Top First Widget'
-  topwidget_second: 'Top Second Widget'
-  topwidget_third: 'Top Third Widget'
-
-  highlighted: 'Highlighted' 
+  highlighted: 'Highlighted'
   page_title: 'Page Title'
   breadcrumb: 'Breadcrumb'
   content: 'Content'
   sidebar_first: 'Left Sidebar'
-  sidebar_second: 'Right Sidebar'  
-
-  middle_first: 'Middle first widget'
-  middle_second: 'Middle second widget'
-  middle_third: 'Middle third widget'
-
-  bottom_first: 'Bottom First Widget'
-  bottom_second: 'Bottom Second Widget'
-  bottom_third: 'Bottom Third Widget'
-  bottom_forth: 'Bottom Forth Widget'
+  sidebar_second: 'Right Sidebar'
 
   footer_first: 'Footer First Widget'
   footer_second: 'Footer Second Widget'

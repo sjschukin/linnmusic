@@ -37,18 +37,23 @@ logo:
 favicon:
   use_default: 1
 slide_image_path1:
-  - '40'
+  - '138'
 slide_image_path2:
-  - '39'
+  - '128'
 slide_image_path3:
-  - '38'
+  - '131'
 slide_image_path4:
-  - '37'
+  - '134'
 slide_title_4: 'Akubarik Exakt Katalyst System'
 slide_description_4: 'Интеллектуальные, модернизируемые акустические системы Linn созданы в соответствии с самыми высокими стандартами'
 slide_url_4: /products/akubarik-exakt-katalyst-system
 slide_image_path5:
-  - '36'
+  - '137'
 slide_title_5: 'Majik 140 System'
 slide_description_5: 'Сделайте свой первый шаг в мир hi-fi с нашими акустическими системами Majik не имеющими аналогов в своей ценовой категории'
 slide_url_5: /products/majik-systems/majik-140-system
+slide_filename_1: image1.jpg
+slide_filename_2: image2.jpg
+slide_filename_3: image3.jpg
+slide_filename_4: image4.jpg
+slide_filename_5: image5.jpg

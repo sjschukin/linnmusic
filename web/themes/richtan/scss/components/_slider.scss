@@ -11,6 +11,7 @@
     position: absolute;
     z-index: 99;
     width: 100%;
+    color: $white-smoke;
     background-color: rgba(0, 0, 0, 0.6);
     bottom: 0;
     padding: 20px;
@@ -23,6 +24,14 @@
     .slider-description {
       display: none;
     }
+
+    a {
+      color: $white-smoke;
+
+      &:hover {
+        color: $white;
+      }
+    }
   }
 
   .flex-direction-nav {
@@ -30,10 +39,10 @@
 
     a {
       padding: 10px;
-      color: $black;
+      color: $white-smoke;
 
       &:before {
-        color: $black;
+        color: $white-smoke;
       }
     }
   }
@@ -46,13 +55,11 @@
 @include breakpoint(md) {
   .flexslider {
     .slider-caption {
-      width: 50%;
-
       .slider-title {
         margin-bottom: 0;
         @include font-size(48px);
       }
-  
+
       .slider-description {
         display: block;
       }

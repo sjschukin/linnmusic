@@ -38,9 +38,10 @@ settings:
           name: Media
           items:
             - Blockquote
-            - DrupalImage
             - Table
             - HorizontalRule
+            - DrupalImage
+            - DrupalMediaLibrary
             - video_embed
         -
           name: 'Block Formatting'
@@ -49,6 +50,10 @@ settings:
         -
           name: Разметка
           items:
+            - widgetbootstrapLeftCol
+            - widgetbootstrapRightCol
+            - widgetbootstrapTwoCol
+            - widgetbootstrapThreeCol
             - WidgetTemplateMenu
         -
           name: Tools

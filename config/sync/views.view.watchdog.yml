@@ -8,13 +8,12 @@ dependencies:
 _core:
   default_config_hash: mRpCPs9ab0M-w_gYtSyRgFco6FohGMSbiN4DH4-xAxU
 id: watchdog
-label: Watchdog
+label: Журнал
 module: views
-description: 'Recent log messages'
+description: 'Последние записи журнала'
 tag: ''
 base_table: watchdog
 base_field: wid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -151,7 +150,7 @@ display:
           field: nothing
           relationship: none
           group_type: group
-          admin_label: Icon
+          admin_label: Иконка
           label: ''
           exclude: false
           alter:
@@ -250,7 +249,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Severity
+          label: Важность
           exclude: true
           alter:
             alter_text: false
@@ -349,7 +348,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Date
+          label: Дата
           exclude: false
           alter:
             alter_text: false
@@ -401,7 +400,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Message
+          label: Сообщение
           exclude: false
           alter:
             alter_text: false
@@ -413,7 +412,7 @@ display:
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: '{{ message }}'
+            alt: сообщение
             rel: ''
             link_class: ''
             prefix: ''
@@ -451,7 +450,7 @@ display:
           relationship: uid
           group_type: group
           admin_label: ''
-          label: User
+          label: Пользователь
           exclude: false
           alter:
             alter_text: false
@@ -585,6 +584,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -611,7 +612,7 @@ display:
           exposed: true
           expose:
             operator_id: severity_op
-            label: Severity
+            label: Важность
             description: ''
             use_operator: false
             operator: severity_op
@@ -624,6 +625,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -650,7 +653,7 @@ display:
           expose:
             label: ''
           plugin_id: standard
-      title: 'Recent log messages'
+      title: 'Последние записи журнала'
       header: {  }
       footer: {  }
       empty:
@@ -660,10 +663,10 @@ display:
           field: area_text_custom
           relationship: none
           group_type: group
-          admin_label: 'No log messages available.'
+          admin_label: 'В системном журнале нет сообщений.'
           empty: true
           tokenize: false
-          content: 'No log messages available.'
+          content: 'В системном журнале нет сообщений.'
           plugin_id: text_custom
       relationships:
         uid:
