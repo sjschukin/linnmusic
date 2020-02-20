@@ -435,7 +435,7 @@ display:
           order: ASC
           exposed: true
           expose:
-            label: 'Name (A-Z)'
+            label: 'Имя (А-Я)'
           entity_type: media
           entity_field: name
           plugin_id: standard
@@ -449,7 +449,7 @@ display:
           order: DESC
           exposed: true
           expose:
-            label: 'Name (Z-A)'
+            label: 'Имя (Я-А)'
           entity_type: media
           entity_field: name
           plugin_id: standard
@@ -1102,7 +1102,7 @@ display:
   widget_table:
     display_plugin: page
     id: widget_table
-    display_title: 'Widget (table)'
+    display_title: 'Виджет (таблица)'
     position: 3
     display_options:
       display_extenders: {  }

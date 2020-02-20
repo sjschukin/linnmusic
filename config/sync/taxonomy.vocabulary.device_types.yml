@@ -1,8 +1,0 @@
-uuid: e10a7bae-2402-4b42-bc64-c8680371fb83
-langcode: ru
-status: true
-dependencies: {  }
-name: 'Типы оборудования'
-vid: device_types
-description: ''
-weight: 0
