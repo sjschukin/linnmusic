@@ -1,8 +1,0 @@
-uuid: 17a4c8fe-b75e-46c1-8120-0f33766eeb9d
-langcode: ru
-status: true
-dependencies: {  }
-name: 'Линейки продуктов'
-vid: music_systems
-description: ''
-weight: 0

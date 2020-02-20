@@ -25,9 +25,9 @@ slide_title_2: 'Linn должен звучать великолепно'
 slide_description_2: 'Специальная цена и работа в подарок по программе второе дыхание для аппаратов старше 5 лет'
 slide_url_2: /events/2019-08-20/uspeyte-pomenyat-blok-pitaniya-vashego-linn-na-novyy-dynamik-power-supply
 slide_image_path_2: /images/slider/slide_02.jpg
-slide_title_3: 'Klimax Exakt Katalyst System'
+slide_title_3: 'Klimax System'
 slide_description_3: 'Самые продвинутые и высокопроизводительные акустические системы, сочетающие в себе одновременно утонченность и мощь звука в равной степени'
-slide_url_3: /products/klimax-exakt-katalyst-system
+slide_url_3: /products/klimax-system
 slide_image_path_3: /images/slider/slide_03.jpg
 _core:
   default_config_hash: TY6WLYxZaBJKkY4Trvj8R0VVUW8GmqYeBoAayk5l2vw
@@ -44,14 +44,14 @@ slide_image_path3:
   - '131'
 slide_image_path4:
   - '134'
-slide_title_4: 'Akubarik Exakt Katalyst System'
+slide_title_4: 'Akubarik System'
 slide_description_4: 'Интеллектуальные, модернизируемые акустические системы Linn созданы в соответствии с самыми высокими стандартами'
-slide_url_4: /products/akubarik-exakt-katalyst-system
+slide_url_4: /products/akubarik-system
 slide_image_path5:
   - '137'
-slide_title_5: 'Majik 140 System'
+slide_title_5: 'Majik System'
 slide_description_5: 'Сделайте свой первый шаг в мир hi-fi с нашими акустическими системами Majik не имеющими аналогов в своей ценовой категории'
-slide_url_5: /products/majik-systems/majik-140-system
+slide_url_5: /products/majik
 slide_filename_1: image1.jpg
 slide_filename_2: image2.jpg
 slide_filename_3: image3.jpg
