@@ -60,8 +60,8 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: ''
-          default_row_class: true
+          row_class: product-item
+          default_row_class: false
       row:
         type: fields
       fields:
@@ -202,7 +202,19 @@ display:
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
-      sorts: {  }
+      sorts:
+        field_price_value:
+          id: field_price_value
+          table: node__field_price
+          field: field_price_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
       title: Компоненты
       header: {  }
       footer: {  }

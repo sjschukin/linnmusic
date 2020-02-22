@@ -7,16 +7,16 @@ dependencies:
 id: products_template
 label: 'Products template'
 type: 'canonical_entities:node'
-pattern: 'products/[node:field_series:entity:name]/[node:title]'
+pattern: 'products/[node:title]'
 selection_criteria:
-  ba48185f-df69-4a48-ac4a-da670e35aceb:
+  938a2342-afd5-4c51-bcb4-f9a513511d7e:
     id: node_type
     bundles:
       product: product
     negate: false
     context_mapping:
       node: node
-    uuid: ba48185f-df69-4a48-ac4a-da670e35aceb
+    uuid: 938a2342-afd5-4c51-bcb4-f9a513511d7e
 selection_logic: and
 weight: -5
 relationships: {  }
